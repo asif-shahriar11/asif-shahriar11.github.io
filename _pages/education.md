@@ -4,7 +4,7 @@ permalink: /education/
 title: Education
 description: A brief description of my academic journey (so far). Forever in debt of all of my teachers.
 nav: true
-nav_order: 6
+nav_order: 4
 ---
 
 - **Bachelor of Science (BSc. Engg.) \[2019 - 2024\]**
