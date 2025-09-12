@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Peer-reviewed publications by in reversed chronological order. Greatly indebted to all my co-authors, supervisors, and collaborators for their invaluable contributions.",
+          description: "Peer-reviewed publications in reversed chronological order. Greatly indebted to all my co-authors, supervisors, and collaborators for their invaluable contributions.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
