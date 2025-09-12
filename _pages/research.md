@@ -1,10 +1,10 @@
 ---
 layout: profiles
-permalink: /people/
-title: people
-description: members of the lab or group
+permalink: /research/
+title: Research
+description: A list of all my research works, completed and ongoing.
 nav: true
-nav_order: 7
+nav_order: 2
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
