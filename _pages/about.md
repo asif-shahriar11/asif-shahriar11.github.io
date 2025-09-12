@@ -6,8 +6,8 @@ subtitle: Learn. Persist. Improve. In that order.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: bracu_photo.jpg
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>CSE Department, 4th floor, Room No # 4M124</p>
     <p>Brac University</p>
