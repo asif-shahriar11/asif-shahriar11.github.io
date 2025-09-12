@@ -445,11 +445,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-my-undergrad-thesis-paper-5gpt-has-been-published-in-ieee-transactions-on-information-forensics-and-security-a-premier-journal-in-the-field-of-computer-security-with-an-impact-factor-of-8-0",
+            },},{id: "news-my-undergrad-thesis-paper-5gpt-has-been-published-in-ieee-transactions-on-information-forensics-and-security-a-premier-journal-in-the-field-of-computer-security-with-an-impact-factor-of-8-0",
           title: 'My undergrad thesis paper, 5GPT, has been published in IEEE Transactions on Information...',
+          description: "",
+          section: "News",},{id: "news-my-first-authored-paper-inceptive-transformers-has-been-accepted-for-presentation-in-the-main-conference-of-emnlp-2025-see-you-all-in-suzhou",
+          title: 'My first-authored paper Inceptive Transformers has been accepted for presentation in the main...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
