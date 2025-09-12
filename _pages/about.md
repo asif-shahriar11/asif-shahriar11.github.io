@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 CSE Department, 4th floor, Room No # 4M124</p>
+    <p>CSE Department, 4th floor, Room No # 4M124</p>
     <p>Brac University</p>
     <p>Kha 224 Bir Uttam Rafiqul Islam Avenue</p>
     <p>Merul Badda, Dhaka, Bangladesh </p>
