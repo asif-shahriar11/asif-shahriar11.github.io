@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: /education/
 title: Education
 description: A brief description of my academic journey (so far). Forever in debt of all of my teachers.
 nav: true
