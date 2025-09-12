@@ -43,7 +43,7 @@ If you'd like to get in touch, please drop me an email.
 
 **Work email:** asif (dot) shahriar (at) bracu (dot) ac (dot) bd
 
-You can also find me on &nbsp; &nbsp; &nbsp;[LinkedIn](https://www.linkedin.com/in/asif-shahriar-0135a82a8/) / [GitHub](https://github.com/asif-shahriar11) / [Google Scholar](https://scholar.google.com/citations?user=JzWK7fS2qRUC&hl=en)
+You can also find me on &nbsp; &nbsp; &nbsp; [LinkedIn](https://www.linkedin.com/in/asif-shahriar-0135a82a8/) / [GitHub](https://github.com/asif-shahriar11) / [Google Scholar](https://scholar.google.com/citations?user=JzWK7fS2qRUC&hl=en)
 
 
 
