@@ -2,16 +2,17 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Learn. Persist. Improve. In that order.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>555 CSE Department, 4th floor, Room No # 4M124</p>
+    <p>Brac University</p>
+    <p>Kha 224 Bir Uttam Rafiqul Islam Avenue</p>
+    <p>Merul Badda, Dhaka, Bangladesh </p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +28,16 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! My name is Asif Shahriar, but you can call me Asif. I am currently working as a Lecturer in the [CSE department](https://cse.sds.bracu.ac.bd/) of [BRAC University](https://www.bracu.ac.bd/). I completed my B.Sc. in CSE from [Bangladesh University of Engineering and Technology (BUET)](https://cse.buet.ac.bd/) in 2024. During my junior year, I completed a hybrid internship at North West Power Generation Company Limited, where I helped develop a machine learning algorithm for predicting `faulty ultrasonic flow-meters`. My current research interests span across computer security, Adversarial ML, natural language processing, and Trustworthy LLMs. Alongside raw-performance improvement, I also value `efficiency`, `modularity`, and `trustworthiness` _(we do not work with someone we do not know, why should it be any different for the technology we use?)_.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My undergrad thesis was on using LLMs for identifying vulnerabilities from 5G specifications using `zero-shot` and `in-context` learning, which has been published in [IEEE TIFS](https://ieeexplore.ieee.org/document/11072222). Currently I am working on `cross-modal vulnerabilities` and `secured agentic frameworks`.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+I am grateful to all the mentors and supervisors who have guided and supported me throughout my academic and research journey. I believe in _“persistence until improvement”_, even if it requires going the extra mile – and hopes my students would, too.
+
+
+If you'd like to get in touch, please drop me an email.
+**Persoonal email:** asif (dot) asr11 (at) gmail (dot) com
+**Work email:** asif (dot) shahriar (at) bracu (dot) ac (dot) bd
+
+You can also find me on [LinkedIn](https://www.linkedin.com/in/asif-shahriar-0135a82a8/) | [GitHub](https://github.com/asif-shahriar11) | [Google Scholar](https://scholar.google.com/citations?user=JzWK7fS2qRUC&hl=en)
