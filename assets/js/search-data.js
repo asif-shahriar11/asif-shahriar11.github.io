@@ -37,8 +37,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/education/";
           },
-        },{id: "nav-work-experience",
-          title: "Work Experience",
+        },{id: "nav-work",
+          title: "Work",
           description: "A list of all of my professional experiences so far.",
           section: "Navigation",
           handler: () => {
