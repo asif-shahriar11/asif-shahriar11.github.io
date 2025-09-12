@@ -49,7 +49,7 @@ ninja.data = [{
           description: "A brief description of my academic journey (so far). Forever in debt of all of my teachers.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/teaching/";
+            window.location.href = "/education/";
           },
         },{id: "nav-people",
           title: "people",
