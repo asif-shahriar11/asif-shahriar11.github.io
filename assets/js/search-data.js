@@ -16,12 +16,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-research",
+          title: "Research",
+          description: "A list of all my research works, completed and ongoing.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
         },{id: "nav-projects",
           title: "projects",
           description: "A growing collection of your cool projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
+          },
+        },{id: "nav-education",
+          title: "Education",
+          description: "A brief description of my academic journey (so far). Forever in debt of all of my teachers.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/education/";
           },
         },{id: "nav-repositories",
           title: "repositories",
@@ -36,20 +50,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-education",
-          title: "Education",
-          description: "A brief description of my academic journey (so far). Forever in debt of all of my teachers.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/education/";
-          },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
           },
         },{id: "dropdown-bookshelf",
               title: "bookshelf",
