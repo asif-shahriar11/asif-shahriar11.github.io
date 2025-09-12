@@ -14,6 +14,7 @@
   pages={7045--7060},
   year={2025},
   doi={10.1109/TIFS.2025.3586480},
+  abstract={Identifying vulnerabilities in complex 5G network protocols is a challenging task. Manual analysis is time-consuming and often inadequate. Modern ML and NLP methods, though effective, are resource-intensive and struggle to find implicit vulnerabilities. In this research, we utilize GPT-4’s advanced language understanding to detect vulnerabilities directly from 5G specifications. To assess GPT-4’s fundamental capabilities in this domain, we first adopt a zero-shot approach that relies solely on the specification text without external guidance. For detecting more sophisticated vulnerabilities that require deep contextual understanding, we introduce a novel domain-aware strategy, where we explicitly teach GPT-4 about security properties and hazard indicators from related works using few-shot learning. We further employ chain-of-thought prompting to guide the model through structured reasoning steps to identify violations or exploitations that may lead to vulnerabilities. A two-tier filtering process ensures that only promising test-cases are retained. Our method has identified 47 potential vulnerabilities in 5G mobility management procedures, including 27 previously unreported issues, and generated corresponding test-cases. Simulating 14 of them, we have found 9 vulnerabilities, five of which are new. The zero-shot approach is effective in detecting procedural and validation flaws, while the domain-aware method excels in finding protocol violations and advanced attack scenarios. These findings validate our methodology and demonstrate its strength in discovering both known and novel vulnerabilities in 5G protocols.},
   pdf={5GPT_final.pdf},
   slides={5GPT_presentation.pdf},
   preview={domain-aware-image.png}
@@ -29,6 +30,7 @@
   author={Shahriar, Asif and Shahriyar, Rifat and Rahman, M Saifur},
   booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
   year={2025},
+  abstract={Encoder transformer models compress information from all tokens in a sequence into a single [CLS] token to represent global context. This approach often dilutes fine-grained or hierarchical features, leading to information loss in downstream tasks where local features are important. To remedy this, we propose a lightweight architectural enhancement in the form of an inception-style 1-D convolution module that sits on top of the transformer layer and augments token representations with multi-scale local features. This enriched feature space is then processed by a multi-headed self-attention layer that dynamically weights tokens based on their task relevance. Experiments across five diverse tasks, covering both short and long form texts, show that our framework consistently improves both general-purpose (RoBERTa, DeBERTa v3, ModernBERT), domain-specific (BioBERT, BERTweet, CT-BERT), and multilingual models (XLM-R, BanglaBERT); outperforming the baselines by 1% to 14% while maintaining efficiency. Ablation studies confirm that multi-scale convolution performs better than any single-kernel, and removing the self-attention layer hurts performance.},
   preview={inceptive_transformer_flowchart.png}
 }
 
@@ -48,6 +50,7 @@ booktitle = {Proceedings of the 11th International Conference on Networking, Sys
 pages = {24–31},
 numpages = {8},
 pdf={XLNet-CNN-NSysS.pdf},
+award={This paper won the best paper award at NSysS 2024.}
 award_name={Best paper award}
 }
 
