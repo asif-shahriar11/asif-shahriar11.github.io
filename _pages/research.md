@@ -26,18 +26,18 @@ My current research interests span across `Computer security`, `Adversarial ML`,
 ### 5GPT: 5G Vulnerability Detection by Combining Zero-Shot Capabilities of GPT-4 With Domain-Aware Strategies Through Prompt Engineering
 *IEEE Transactions on Information Forensics and Security, 2025.*  
 
-<div class="row g-2 my-2">
+<div class="row g-2 my-2" markdown="1">
   <div class="col-12 col-md-6 col-lg-4">
-    ![Zero-shot approach](/assets/img/rhino.png){:.img-fluid .rounded .shadow-sm}
+    ![Zero-shot approach](/assets/img/zero-shot-image.png){:.img-fluid .rounded .shadow-sm}
   </div>
-  <!-- Add/remove blocks as needed -->
   <div class="col-12 col-md-6 col-lg-4">
     ![Domain-aware approach](/assets/img/publication_preview/domain-aware-image.png){:.img-fluid .rounded .shadow-sm}
   </div>
 </div>
 
 
-Can LLMs like GPT-4 analyze complex cellular protocol specifications to identify security vulnerabilities? We discovered that out-of-the-box GPT-4 has impressive capabilities in flagging ogical inconsistencies and procedural flaws, but it also hallucinates, provides false positives, and struggles to detect deep protocol issues. To remedy this, we teach GPT-4 to think like a telecom-security expert-— what properties must hold, how they fail, and how hazards indicators are exploited by adversaries. The result? A scalable, powerful, efficient black-box framework that can uncover subtle, protocol-level attack vectors that would otherwise slip through the cracks.
+
+Can LLMs like GPT-4 analyze complex cellular protocol specifications to identify security vulnerabilities? We discovered that out-of-the-box GPT-4 has impressive capabilities in flagging ogical inconsistencies and procedural flaws, but it also hallucinates, provides false positives, and struggles to detect deep protocol issues. To remedy this, we teach GPT-4 to think like a telecom-security expert-- what properties must hold, how they fail, and how hazards indicators are exploited by adversaries. The result? A scalable, powerful, efficient black-box framework that can uncover subtle, protocol-level attack vectors that would otherwise slip through the cracks.
 
 **Supervisor(s):** [Dr. Md Shohrab Hossain (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mshohrabhossain), [Dr. Ying-Dar Lin](https://speed.cs.nycu.edu.tw/~ydlin/), [Dr. Ren-Hung Hwang](https://rhhwang.csie.io/English/index.html)
 
@@ -58,6 +58,9 @@ LLMs like GPT-4 have been used extensively in code-level security testing. Natur
 
 To uncover deeper, protocol-level attack vectors with greater precision, GPT-4 needs cdomain-specific contextual understanding. For this we introduce a novel domain-aware strategy, where we explicitly teach GPT-4 about security properties and hazard indicators from related works using few-shot learning. We further employ chain-of-thought
 prompting to guide the model through structured reasoning steps to identify violations or exploitations that may lead to vulnerabilities. Using the domain-aware approach, we have identified 24 potential vulnerabilities, including 15 new. These include sophisticated vulnerabilities like multi-state and cross-procedure attacks, cryptographic and integrity violations, message spoofing, injection, privacy and identity exposure, and resource management exploits. We tested SIX of these vulnerabilities and confirmed FIVE.
+
+We also compared our findings against a white-box model, Mobile-LLaMA, and found that GPT-4 is more capable of finding both logical flaws and real-world exploits.
+
 </div>
 
 
@@ -116,8 +119,10 @@ Our experiments demonstrate that Inceptive Transformers consistently outperform 
 ---
 
 ### 5G Vulnerability Testing using Retrieval-Augmented Generation
-![5G RAG](rhino.png ){:.img-fluid .rounded .shadow-sm width="220"}  
 *Ongoing work.*  
+
+![5G RAG](/assets/img/rhino.png ){:.img-fluid .rounded .shadow-sm width="220"}  
+
 
 In 5GPT, we showed that LLMs are capable of identifying vulnerailities from complex natural language documents like 5G specifications. However, we also showed that LLMs have a tendency to 'hallucinate', where they suggest some false-positives. Furthermore, it is difficult for LLMs to capture cross-section vulnerabilities. To address these issues, we propose a novel, fully automated end-to-end framework that utilizes a Retrieval-Augmented Generation (RAG) pipeline to ground LLM outputs in verified, domain-specific data to minimize hallucinations. We also introduce a robust context retrieval mechanism to overcome the cross-section dependency challenges. Using this framework, we have so far generated **800** test-cases for essential 5G mobility management procedures in **under 3 hours**.
 
@@ -136,7 +141,7 @@ LLMs and VLMs are vulnerable to jailbreak attacks, we know that. In these attack
 ---
 
 ### Secured Multi-agent Systems
-*Ongoing.*  
+*Ongoing work.*  
 After the revolution of LLMs, we now see the rise of agentic frameworks that can browse the web, perform grocery shopping from amazon, run OS commands, and what not. _**But what about security?**_ What if the _cheapest deal_ is being offered at a _phishing website?_ That's what we aim to found out.
 
 **Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
