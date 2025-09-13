@@ -26,13 +26,15 @@ My current research interests span across `Computer security`, `Adversarial ML`,
 ### 5GPT: 5G Vulnerability Detection by Combining Zero-Shot Capabilities of GPT-4 With Domain-Aware Strategies Through Prompt Engineering
 *IEEE Transactions on Information Forensics and Security, 2025.*  
 
-![Zero-shot approach](/assets/img/zero-shot-image.png){:.img-fluid .rounded .shadow-sm width="800"}
+![Zero-shot approach](/assets/img/zero-shot-image.png){:.img-fluid .rounded .shadow-sm width="800"} <br>
 _Fig: Zero-shot approach_
 
+<p style="margin-top:1em;"></p>
 
-![Domain-aware approach](/assets/img/domain-aware-image.png){:.img-fluid .rounded .shadow-sm width="900"}
+![Domain-aware approach](/assets/img/domain-aware-image.png){:.img-fluid .rounded .shadow-sm width="900"} <br>
 _Fig: Domain-aware approach_
 
+<p style="margin-top:1em;"></p>
 
 Can LLMs like GPT-4 analyze complex cellular protocol specifications to identify security vulnerabilities? We discovered that out-of-the-box GPT-4 has impressive capabilities in flagging ogical inconsistencies and procedural flaws, but it also hallucinates, provides false positives, and struggles to detect deep protocol issues. To remedy this, we teach GPT-4 to think like a telecom-security expert-- what properties must hold, how they fail, and how hazards indicators are exploited by adversaries. The result? A scalable, powerful, efficient black-box framework that can uncover subtle, protocol-level attack vectors that would otherwise slip through the cracks.
 
@@ -69,9 +71,11 @@ We also compared our findings against a white-box model, Mobile-LLaMA, and found
 
 <!-- Image gallery (multiple images, responsive). 
      Option A: no fixed widths, all scale to container -->
-![Inceptive transformers workflow](/assets/img/inceptive_transformer_flowchart.png){:.img-fluid .rounded .shadow-sm width="900"}
+![Inceptive transformers workflow](/assets/img/inceptive_transformer_flowchart.png){:.img-fluid .rounded .shadow-sm width="900"} <br>
 _Fig: End-to-end workflow of Inceptive Transformer models_
 
+
+<p style="margin-top:1em;"></p>
 
 | ![Attention maps](/assets/img/inceptive_intro.png){: width="400"} | ![Irony comparison](/assets/img/best-comp-irony.png){: width="300"} | ![OHSUMED comparison](/assets/img/best-comp-ohsumed.png){: width="300"} |
 |:--:|:--:|:--:|
@@ -82,9 +86,11 @@ _Fig: End-to-end workflow of Inceptive Transformer models_
      replace any image above with e.g.:
      ![Alt](/assets/img/flowchart.png){:.img-fluid .rounded .shadow-sm width="420"} -->
 
+<p style="margin-top:2em;"></p>
+
 A modular, lightweight, plug-and-play architecture for enhancing the contextual representations of _**any**_ encoder model. Improves **EIGHT** PLM baselines across **FIVE** tasks for both short/long texts in English and Bangla.
 
-**Supervisor(s):** [Dr. M Saifur Rahman (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mrahman), [Dr. Rifat Shahriyar](https://cse.buet.ac.bd/faculty/faculty_detail/rifat)
+**Supervisor(s):** [Dr. M Saifur Rahman (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mrahman), [Dr. Rifat Shahriyar (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/rifat)
 
 <div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="Inceptive links">
   <a class="btn btn-outline-secondary readmore-btn"
@@ -114,8 +120,15 @@ Our experiments demonstrate that Inceptive Transformers consistently outperform 
 ### 5G Vulnerability Testing using Retrieval-Augmented Generation
 *Ongoing work.*  
 
-![5G RAG](/assets/img/rhino.png ){:.img-fluid .rounded .shadow-sm width="220"}  
+![5G-RAG](/assets/img/5GRAG-flow-chart.png){:.img-fluid .rounded .shadow-sm width="800"} <br>
+_Fig: End-to-end workflow_
 
+<p style="margin-top:1em;"></p>
+
+![Context retrieval](/assets/img/5GRAG-context-retrieval.png){:.img-fluid .rounded .shadow-sm width="800"} <br>
+_Fig: Context retrieval method_
+
+<p style="margin-top:3em;"></p>
 
 In 5GPT, we showed that LLMs are capable of identifying vulnerailities from complex natural language documents like 5G specifications. However, we also showed that LLMs have a tendency to 'hallucinate', where they suggest some false-positives. Furthermore, it is difficult for LLMs to capture cross-section vulnerabilities. To address these issues, we propose a novel, fully automated end-to-end framework that utilizes a Retrieval-Augmented Generation (RAG) pipeline to ground LLM outputs in verified, domain-specific data to minimize hallucinations. We also introduce a robust context retrieval mechanism to overcome the cross-section dependency challenges. Using this framework, we have so far generated **800** test-cases for essential 5G mobility management procedures in **under 3 hours**.
 
