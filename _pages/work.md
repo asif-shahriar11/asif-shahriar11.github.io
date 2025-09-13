@@ -21,5 +21,6 @@ nav_order: 5
 <p style="margin-top:0.5em;"></p>
 
 - **Intern Machine Learning Engineer \[2023\]** <br>
-  North West Power Generation Company Limited Bangladesh
+  North West Power Generation Company Limited, Bangladesh <br>
+  Developed a machine learning model for [predicting faulty liquid ultrasonic flow-meters](https://github.com/asif-shahriar11/Predicting-faulty-flowmeters)
 
