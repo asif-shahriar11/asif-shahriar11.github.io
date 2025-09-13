@@ -26,13 +26,13 @@ My current research interests span across `Computer security`, `Adversarial ML`,
 ### 5GPT: 5G Vulnerability Detection by Combining Zero-Shot Capabilities of GPT-4 With Domain-Aware Strategies Through Prompt Engineering
 *IEEE Transactions on Information Forensics and Security, 2025.*  
 
-![5G RAG](/assets/img/zero-shot-image.png){:.img-fluid .rounded .shadow-sm width="500"}  
+![5G RAG](assets/img/publication_preview/zero-shot-image.png){:.img-fluid .rounded .shadow-sm width="500"}  
 <div class="row g-2 my-2" markdown="1">
   <div class="col-12 col-md-6 col-lg-4">
-    ![Zero-shot approach](/assets/img/zero-shot-image.png){:.img-fluid .rounded .shadow-sm}
+    ![Zero-shot approach](assets/img/publication_preview/zero-shot-image.png){:.img-fluid .rounded .shadow-sm}
   </div>
   <div class="col-12 col-md-6 col-lg-4">
-    ![Domain-aware approach](/assets/img/publication_preview/domain-aware-image.png){:.img-fluid .rounded .shadow-sm}
+    ![Domain-aware approach](assets/img/publication_preview/domain-aware-image.png){:.img-fluid .rounded .shadow-sm width="500"}
   </div>
 </div>
 
