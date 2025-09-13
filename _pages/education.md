@@ -56,7 +56,6 @@ My undergrad CGPA is a strictly increasing function of time (semesters). Maybe s
     }
   ],
   "layout": {
-    "title": {"text": "Cumulative CGPA by Term", "x": 0.02},
     "legend": {"orientation": "h", "x": 0.02, "y": 1.15},
     "margin": {"t": 60, "r": 10, "b": 40, "l": 50},
     "xaxis": {"title": "Term"},
