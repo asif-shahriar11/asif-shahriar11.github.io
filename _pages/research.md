@@ -52,7 +52,7 @@ My current research interests span across `Computer security`, `Adversarial ML`,
 
 <div class="row g-2 my-2">
   <div class="col-12 col-md-6 col-lg-4">
-    ![Zero-shot approach](/assets/img/publication_preview/zero-shot-image.png){:.img-fluid .rounded .shadow-sm}
+    ![Zero-shot approach](/assets/img/rhino.png){:.img-fluid .rounded .shadow-sm}
   </div>
   <!-- Add/remove blocks as needed -->
   <div class="col-12 col-md-6 col-lg-4">
