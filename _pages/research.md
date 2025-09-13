@@ -149,7 +149,7 @@ In 5GPT, we showed that LLMs are capable of identifying vulnerailities from comp
 *Ongoing work.*  
 <p style="margin-top:1em;"></p>
 
-LLMs and VLMs are vulnerable to jailbreak attacks, we know that. In these attacks, the user attempts a number of techniques to elicit harmful responses that the model would generally not produce. In this work we aim to introduce a novel class of attacks that deceive both the user and the VLM. The model is compromised by a hidden instruction, while the human user, who may be interacting with the model through a completely benign-looking image, is an unwitting participant in the attack. If successful, the implications of this attack could be huge.
+In traditiional jailbreak attacks, user is the adversary while LLM is the victim. The user attempts a number of techniques to elicit harmful responses that the model would generally not produce. In this work we aim to introduce a novel class of attacks that deceive both the user and the VLM. The model is compromised by a hidden instructions, while the human user, who may be interacting with the model through a completely benign-looking image, is an unwitting participant in the attack. If successful, the implications of this attack could be huge.
 
 **Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
 
@@ -160,7 +160,7 @@ LLMs and VLMs are vulnerable to jailbreak attacks, we know that. In these attack
 *Ongoing work.*  
 <p style="margin-top:1em;"></p>
 
-After the revolution of LLMs, we now see the rise of agentic frameworks that can browse the web, perform grocery shopping from amazon, run OS commands, and what not. _**But what about security?**_ What if the _cheapest deal_ is being offered at a _phishing website?_ That's what we aim to found out.
+After the revolution of LLMs, we now see the rise of agentic frameworks that can browse the web, perform grocery shopping from amazon, run OS commands, and what not. _**But what about security?**_ What if the _cheapest deal_ is being offered at a _phishing website?_ That's what we aim to find out.
 
 **Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
 
