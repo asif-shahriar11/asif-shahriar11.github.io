@@ -77,9 +77,9 @@ _Fig: End-to-end workflow of Inceptive Transformer models_
 
 <p style="margin-top:1em;"></p>
 
-| ![Attention maps](/assets/img/inceptive_intro.png){: width="400"} | ![Irony comparison](/assets/img/best-comp-irony.png){: width="300"} | ![OHSUMED comparison](/assets/img/best-comp-ohsumed.png){: width="300"} |
+| ![Attention maps](/assets/img/inceptive_intro.png){: width="400"} | ![Irony comparison](/assets/img/irony-comp.png){: width="300"} | ![OHSUMED comparison](/assets/img/ohsumed-comp.png){: width="300"} |
 |:--:|:--:|:--:|
-| Attention visualization | Performance comparison (irony) | Performance comparison (OHSUMED) |
+| Attention visualization | Performance comparison (irony detection) | Performance comparison (OHSUMED disease identification) |
 
 
 <!-- If you prefer per-image width control, 
@@ -139,6 +139,8 @@ In 5GPT, we showed that LLMs are capable of identifying vulnerailities from comp
 
 ### Cross-modal Deception: There is More than what Meets the Eyes
 *Ongoing work.*  
+<p style="margin-top:1em;"></p>
+
 LLMs and VLMs are vulnerable to jailbreak attacks, we know that. In these attacks, the user attempts a number of techniques to elicit harmful responses that the model would generally not produce. In this work we aim to introduce a novel class of attacks that deceive both the user and the VLM. The model is compromised by a hidden instruction, while the human user, who may be interacting with the model through a completely benign-looking image, is an unwitting participant in the attack. If successful, the implications of this attack could be huge.
 
 **Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
@@ -148,6 +150,8 @@ LLMs and VLMs are vulnerable to jailbreak attacks, we know that. In these attack
 
 ### Secured Multi-agent Systems
 *Ongoing work.*  
+<p style="margin-top:1em;"></p>
+
 After the revolution of LLMs, we now see the rise of agentic frameworks that can browse the web, perform grocery shopping from amazon, run OS commands, and what not. _**But what about security?**_ What if the _cheapest deal_ is being offered at a _phishing website?_ That's what we aim to found out.
 
 **Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
