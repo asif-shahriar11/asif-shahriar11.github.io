@@ -43,29 +43,23 @@ Can LLMs like GPT-4 analyze complex cellular protocol specifications to identify
 
 
 
-<!-- Button row: Read more + PDF + Code SIDE BY SIDE -->
+<!-- Buttons with gaps (no Bootstrap JS required) -->
 <div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="5gpt links">
-  <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#more-5gpt" role="button" aria-expanded="false" aria-controls="more-5gpt">
-    Read more
-  </a>
+  <a class="btn btn-outline-secondary readmore-btn"
+     data-target="#more-5gpt"
+     href="javascript:void(0)">Read more</a>
   <a class="btn btn-outline-secondary" href="/assets/pdf/5GPT_final.pdf" target="_blank" rel="noopener">PDF</a>
   <a class="btn btn-outline-secondary" href="/assets/pdf/5GPT_presentation.pdf" target="_blank" rel="noopener">Slides</a>
 </div>
 
-
-<!-- Collapsible extra text; uses a unique id -->
-<div class="collapse mt-2" id="more-5gpt">
-  <div markdown="1">
-
+<!-- Hidden content block -->
+<div id="more-5gpt" class="mt-2 d-none" markdown="1">
 LLMs like GPT-4 have been used extensively in code-level security testing. Natural language is difficult; it is unstructured and inherently ambiguous. To assess GPT-4's capabilities in this domain, we first adopt a zero-shot approach that relies solely on the specification text without any external guidance. On surface level, the results are impressive: GPT-4 is highly effective in detecting high-level logical inconsistencies, weak validation checks, misconfigurations, and ambiguous protocol rules. Examples include improper handling of de-registration request with switch-off indication, inaccurate updating of 5G-GUTI, ambiguous guidelines for SNPN-specific attempt counters, and so on. Althogether GPT-4 identified 25 potential vulnerabilities, of which 12 are new. We tested eight of them and found four true-positives, the remaining four were false-positives. So, on its own GPT-4 is prone to hallucination. Further, GPT-4 is unable to identify advanced, low-level security flaws such as cryptographic weaknesses, exploitable timing and race condition attacks, network layer exploits (including downgrade attacks), and particularly attacks that involve multiple states or entities. 
 
 To uncover deeper, protocol-level attack vectors with greater precision, GPT-4 needs cdomain-specific contextual understanding. For this we introduce a novel domain-aware strategy, where we explicitly teach GPT-4 about security properties and hazard indicators from related works using few-shot learning. We further employ chain-of-thought
 prompting to guide the model through structured reasoning steps to identify violations or exploitations that may lead to vulnerabilities. Using the domain-aware approach, we have identified 24 potential vulnerabilities, including 15 new. These include sophisticated vulnerabilities like multi-state and cross-procedure attacks, cryptographic and integrity violations, message spoofing, injection, privacy and identity exposure, and resource management exploits. We tested SIX of these vulnerabilities and confirmed FIVE.
-
-We also compared our findings against a white-box model, Mobile-LLaMA, and found that GPT-4 is more capable of finding both logical flaws and real-world exploits.
-
-  </div>
 </div>
+
 
 
 ---
@@ -96,27 +90,23 @@ A modular, lightweight, plug-and-play architecture for enhancing the contextual 
 
 **Supervisor(s):** [Dr. M Saifur Rahman (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mrahman), [Dr. Rifat Shahriyar](https://cse.buet.ac.bd/faculty/faculty_detail/rifat)
 
-<!-- Button row: Read more + PDF + Code SIDE BY SIDE -->
-<div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="inceptive links">
-  <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#more-inceptive" role="button" aria-expanded="false" aria-controls="more-inceptive">
-    Read more
-  </a>
+<div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="Inceptive links">
+  <a class="btn btn-outline-secondary readmore-btn"
+     data-target="#more-inceptive"
+     href="javascript:void(0)">Read more</a>
   <a class="btn btn-outline-secondary" href="/assets/pdf/5GPT_final.pdf" target="_blank" rel="noopener">PDF</a>
   <a class="btn btn-outline-secondary" href="https://github.com/asif-shahriar11/inceptive-transformer" target="_blank" rel="noopener">Code</a>
 </div>
 
-<!-- Collapsible extra text; uses a unique id -->
-<div class="collapse mt-2" id="more-inceptive">
-  <div markdown="1">
-
+<div id="more-inceptive" class="mt-2 d-none" markdown="1">
 Encoder models are designed to aggregate all token embeddings into a single representation, called the \[CLS\] token, which is later used for downstream tasks like classification. Although it is convenient, the over-reliance on a single representative token can make encoder models insufficient in capturing fine-grained contextual nuances or localized cues critical for tasks like emotion recognition or irony detection \[left figure\]. This issue is even more pronounced in multi-label tasks, which require token-level attention rather than a single sequence-level summary.
 
 In this work we propose _**Inceptive Transformers**_ -- a lightweight and modular architecture that augments a transformer baseline by stacking an inception-style 1-D convolution module on top. Instead of using \[CLS\]-based pooling, we feed the final hidden states from the baseline transformer (e.g. RoBERTa or BioBERT) to a multi-scale feature extraction module. This inception module employs parallel 1-D convolutional filters with varying kernel sizes that are designed to recognize local features, such as key phrases or word combinations that are indicative of specific classifications. The goal of the inception module is to incorporate local features without sacrificing global context, which is achieved by using a residual connection to concatenate the original transformer's hidden states with the multi-scale features. These enriched features are then processed by a self-attention mechanism, which dynamically assigns weights to tokens based on their task-specific contribution, thus allowing the model to effectively prioritize relevant tokens. 
 
 Our experiments demonstrate that Inceptive Transformers consistently outperform both general-purpose baselines (like RoBERTa and DeBERTa v3) and domain-specific ones (like BERTweet and BioBERT). On five different tasks (Bangla and English emotion recognition, irony detection, disease identification, and anti-vaccine concern classification), we observed performance gains from **1%** to as high as **14%** in accuracy and F1-score, with less than 10% inference-time overhead.
-
-  </div>
+<!-- (keep your full extra text here) -->
 </div>
+
 
 
 <p style="margin-top:3em;"></p>
@@ -182,15 +172,29 @@ After the revolution of LLMs, we now see the rise of agentic frameworks that can
 
 
 
-<!-- Toggle "Read more" <-> "Show less" on collapse buttons -->
 <script>
-document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = document.querySelector(btn.getAttribute('href'));
-    if (!target) return;
-    target.addEventListener('shown.bs.collapse', () => btn.textContent = 'Show less');
-    target.addEventListener('hidden.bs.collapse', () => btn.textContent = 'Read more');
-  });
-});
+  // Read more / Show less toggler without Bootstrap JS
+  (function () {
+    document.querySelectorAll('.readmore-btn').forEach(function (btn) {
+      const sel = btn.getAttribute('data-target');
+      const box = document.querySelector(sel);
+      if (!box) return;
+
+      function isHidden(el) { return el.classList.contains('d-none'); }
+      function show(el) { el.classList.remove('d-none'); }
+      function hide(el) { el.classList.add('d-none'); }
+
+      btn.addEventListener('click', function () {
+        if (isHidden(box)) {
+          show(box);
+          btn.textContent = 'Show less';
+        } else {
+          hide(box);
+          btn.textContent = 'Read more';
+        }
+      });
+    });
+  })();
 </script>
+
 
