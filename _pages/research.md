@@ -8,7 +8,12 @@ nav_order: 2
 ---
 
 <!-- minimal HTML only for type-to-filter -->
-My current research interests span across `Computer security`, `Adversarial ML`, `Natural language processing`, and `Trustworthy AI`.
+My current research interests include: <br>
+
+- 💻 `Computer security`, `AI for security`, `Security for AI` <br>
+- ⚔️ `Adversarial ML`,  `Trustworthy Generative AI`,  `Secured Agentic Frameworks` <br>
+- 📖 `Natural language processing`, `Large Language Models`, `Retrieval-Augmented Generation` <br>
+
 
 
 <input id="research-search" class="form-control list-search" type="search" placeholder="Type to filter: topic, title, venue, year, supervisor…" />
@@ -24,7 +29,9 @@ My current research interests span across `Computer security`, `Adversarial ML`,
 ---
 
 ### 5GPT: 5G Vulnerability Detection by Combining Zero-Shot Capabilities of GPT-4 With Domain-Aware Strategies Through Prompt Engineering
-*IEEE Transactions on Information Forensics and Security, 2025.*  
+***IEEE Transactions on Information Forensics and Security, 2025.***  
+
+<p style="margin-top:1em;"></p>
 
 ![Zero-shot approach](/assets/img/zero-shot-image.png){:.img-fluid .rounded .shadow-sm width="800"} <br>
 _Fig: Zero-shot approach_
@@ -66,7 +73,9 @@ We also compared our findings against a white-box model, Mobile-LLaMA, and found
 ---
 
 ### Inceptive Transformers: Enhancing Contextual Representations through Multi-Scale Feature Learning Across Domains and Languages
-*Accepted for presentation in EMNLP 2025.*
+*Accepted for presentation in **EMNLP 2025**.*
+
+<p style="margin-top:1em;"></p>
 
 <!-- Image gallery (multiple images, responsive). 
      Option A: no fixed widths, all scale to container -->
@@ -76,7 +85,7 @@ _Fig: End-to-end workflow of Inceptive Transformer models_
 
 <p style="margin-top:1em;"></p>
 
-| ![Attention maps](/assets/img/inceptive_intro.png){: width="400"} | ![Irony comparison](/assets/img/irony-comp.png){: width="300"} | ![OHSUMED comparison](/assets/img/ohsumed-comp.png){: width="300"} |
+| ![Attention maps](/assets/img/inceptive_intro.png){: width="350"} | ![Irony comparison](/assets/img/irony-comp.png){: width="200"} | ![OHSUMED comparison](/assets/img/ohsumed-comp.png){: width="200"} |
 |:--:|:--:|:--:|
 | Attention visualization | Performance comparison (irony detection) | Performance comparison (OHSUMED disease identification) |
 
