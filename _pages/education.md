@@ -6,7 +6,7 @@ description: A brief description of my academic journey (so far). Forever in deb
 nav: true
 nav_order: 4
 chart:
- ploty: true
+  plotly: true
 ---
 
 - **Bachelor of Science (BSc. Engg.) \[2019 - 2024\]** <br>
