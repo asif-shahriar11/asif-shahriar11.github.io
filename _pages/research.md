@@ -26,18 +26,12 @@ My current research interests span across `Computer security`, `Adversarial ML`,
 ### 5GPT: 5G Vulnerability Detection by Combining Zero-Shot Capabilities of GPT-4 With Domain-Aware Strategies Through Prompt Engineering
 *IEEE Transactions on Information Forensics and Security, 2025.*  
 
-![5G RAG](/assets/img/publication_preview/zero-shot-image.png){:.img-fluid .rounded .shadow-sm width="500"}
-
-<div class="row g-2 my-2" markdown="1">
-  <div class="col-12 col-md-6 col-lg-4" markdown="1">
-    ![Zero-shot approach](/assets/img/publication_preview/zero-shot-image.png){:.img-fluid .rounded .shadow-sm}
-  </div>
-  <div class="col-12 col-md-6 col-lg-4" markdown="1">
-    ![Domain-aware approach](/assets/img/publication_preview/domain-aware-image.png){:.img-fluid .rounded .shadow-sm}
-  </div>
-</div>
+![Zero-shot approach](/assets/img/zero-shot-image.png){:.img-fluid .rounded .shadow-sm width="800"}
+_Fig: Zero-shot approach_
 
 
+![Domain-aware approach](/assets/img/domain-aware-image.png){:.img-fluid .rounded .shadow-sm width="900"}
+_Fig: Domain-aware approach_
 
 
 Can LLMs like GPT-4 analyze complex cellular protocol specifications to identify security vulnerabilities? We discovered that out-of-the-box GPT-4 has impressive capabilities in flagging ogical inconsistencies and procedural flaws, but it also hallucinates, provides false positives, and struggles to detect deep protocol issues. To remedy this, we teach GPT-4 to think like a telecom-security expert-- what properties must hold, how they fail, and how hazards indicators are exploited by adversaries. The result? A scalable, powerful, efficient black-box framework that can uncover subtle, protocol-level attack vectors that would otherwise slip through the cracks.
@@ -75,18 +69,14 @@ We also compared our findings against a white-box model, Mobile-LLaMA, and found
 
 <!-- Image gallery (multiple images, responsive). 
      Option A: no fixed widths, all scale to container -->
-<div class="row g-2 my-2">
-  <div class="col-12 col-md-6 col-lg-4">
-    ![Flow-chart](/assets/img/publication_preview/inceptive_transformer_flowcharts){:.img-fluid .rounded .shadow-sm}
-  </div>
-  <!-- Add/remove blocks as needed -->
-  <div class="col-12 col-md-6 col-lg-4">
-    ![Inceptive - fig 2](/assets/img/another_image.png){:.img-fluid .rounded .shadow-sm}
-  </div>
-  <div class="col-12 col-md-6 col-lg-4">
-    ![Inceptive - fig 3](/assets/img/flowchart.png){:.img-fluid .rounded .shadow-sm}
-  </div>
-</div>
+![Inceptive transformers workflow](/assets/img/inceptive_transformer_flowchart.png){:.img-fluid .rounded .shadow-sm width="900"}
+_Fig: End-to-end workflow of Inceptive Transformer models_
+
+
+| ![Attention maps](/assets/img/inceptive_intro.png){: width="400"} | ![Irony comparison](/assets/img/best-comp-irony.png){: width="300"} | ![OHSUMED comparison](/assets/img/best-comp-ohsumed.png){: width="300"} |
+|:--:|:--:|:--:|
+| Attention visualization | Performance comparison (irony) | Performance comparison (OHSUMED) |
+
 
 <!-- If you prefer per-image width control, 
      replace any image above with e.g.:
