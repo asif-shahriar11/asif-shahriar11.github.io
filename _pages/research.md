@@ -9,14 +9,12 @@ nav_order: 2
 
 <!-- minimal HTML only for type-to-filter -->
 My current research interests span across `Computer security`, `Adversarial ML`, `Natural language processing`, and `Trustworthy AI`.
-Type in the box below to filter.
 
 
 <input id="research-search" class="form-control list-search" type="search" placeholder="Type to filter: topic, title, venue, year, supervisor…" />
 
 
 
----
 
 <!-- tiny filter script: scans text; no extra deps -->
 <script>
@@ -42,7 +40,7 @@ Type in the box below to filter.
 </script>
 
 
-<p style="margin-top:2em;"></p>
+<p style="margin-top:3em;"></p>
 
 
 ## Completed Works
@@ -50,19 +48,37 @@ Type in the box below to filter.
 ---
 
 ### 5GPT: 5G Vulnerability Detection by Combining Zero-Shot Capabilities of GPT-4 With Domain-Aware Strategies Through Prompt Engineering
-*IEEE Transactions on Information Forensics and Security.*  
-![5GPT](/assets/img/rhino.png){:.img-fluid .rounded .shadow-sm width="220"}  
+*IEEE Transactions on Information Forensics and Security, 2025.*  
+
+<div class="row g-2 my-2">
+  <div class="col-12 col-md-6 col-lg-4">
+    ![Zero-shot approach](/assets/img/publication_preview/zero-shot-image.png){:.img-fluid .rounded .shadow-sm}
+  </div>
+  <!-- Add/remove blocks as needed -->
+  <div class="col-12 col-md-6 col-lg-4">
+    ![Domain-aware approach](/assets/img/publication_preview/domain-aware-image.png){:.img-fluid .rounded .shadow-sm}
+  </div>
+</div>
+
 
 Can LLMs like GPT-4 analyze complex cellular protocol specifications to identify security vulnerabilities? We discovered that out-of-the-box GPT-4 has impressive capabilities in flagging ogical inconsistencies and procedural flaws, but it also hallucinates, provides false positives, and struggles to detect deep protocol issues. To remedy this, we teach GPT-4 to think like a telecom-security expert-— what properties must hold, how they fail, and how hazards indicators are exploited by adversaries. The result? A scalable, powerful, efficient black-box framework that can uncover subtle, protocol-level attack vectors that would otherwise slip through the cracks.
 
 **Supervisor(s):** [Dr. Md Shohrab Hossain (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mshohrabhossain), [Dr. Ying-Dar Lin](https://speed.cs.nycu.edu.tw/~ydlin/), [Dr. Ren-Hung Hwang](https://rhhwang.csie.io/English/index.html)
 
 
-<details class="mb-2 research-details">
-  <summary class="btn btn-sm btn-outline-secondary">
-    <span class="toggle-label">Read more</span>
-  </summary>
-  <div class="mt-2" markdown="1">
+
+<!-- Button row: Read more + PDF + Code SIDE BY SIDE -->
+<div class="btn-group btn-group-sm my-2" role="group" aria-label="5gpt links">
+  <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#more-5gpt" role="button" aria-expanded="false" aria-controls="more-5gpt">
+    Read more
+  </a>
+  <a class="btn btn-outline-secondary" href="/assets/pdf/5GPT_final.pdf" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-secondary" href="/assets/pdf/5GPT_presentation.pdf" target="_blank" rel="noopener">Slides</a>
+</div>
+
+<!-- Collapsible extra text; uses a unique id -->
+<div class="collapse mt-2" id="more-5gpt">
+  <div markdown="1">
 
 LLMs like GPT-4 have been used extensively in code-level security testing. Natural language is difficult; it is unstructured and inherently ambiguous. To assess GPT-4's capabilities in this domain, we first adopt a zero-shot approach that relies solely on the specification text without any external guidance. On surface level, the results are impressive: GPT-4 is highly effective in detecting high-level logical inconsistencies, weak validation checks, misconfigurations, and ambiguous protocol rules. Examples include improper handling of de-registration request with switch-off indication, inaccurate updating of 5G-GUTI, ambiguous guidelines for SNPN-specific attempt counters, and so on. Althogether GPT-4 identified 25 potential vulnerabilities, of which 12 are new. We tested eight of them and found four true-positives, the remaining four were false-positives. So, on its own GPT-4 is prone to hallucination. Further, GPT-4 is unable to identify advanced, low-level security flaws such as cryptographic weaknesses, exploitable timing and race condition attacks, network layer exploits (including downgrade attacks), and particularly attacks that involve multiple states or entities. 
 
@@ -72,29 +88,61 @@ prompting to guide the model through structured reasoning steps to identify viol
 We also compared our findings against a white-box model, Mobile-LLaMA, and found that GPT-4 is more capable of finding both logical flaws and real-world exploits.
 
   </div>
-</details>
-
-
-
-
-[PDF](/assets/pdf/5GPT_final.pdf){:.btn .btn-sm .btn-outline-secondary}
-[SLIDES](/assets/pdf/5GPT_presentation.pdf){:.btn .btn-sm .btn-outline-secondary}
+</div>
 
 
 ---
 
-### Inceptive Transformers
-![Inceptive]( /assets/img/rhino.png){:.img-fluid .rounded .shadow-sm width="220"}  
-*Accepted for presentation in EMNLP 2025.*  
-A plug-in inception-style multi-scale extractor for **any** encoder model. Improves eight PLM baselines across five tasks for both short/long texts in English and Bangla.
+### Inceptive Transformers: Enhancing Contextual Representations through Multi-Scale Feature Learning Across Domains and Languages
+*Accepted for presentation in EMNLP 2025.*
+
+<!-- Image gallery (multiple images, responsive). 
+     Option A: no fixed widths, all scale to container -->
+<div class="row g-2 my-2">
+  <div class="col-12 col-md-6 col-lg-4">
+    ![Flow-chart](/assets/img/publication_preview/inceptive_transformer_flowcharts){:.img-fluid .rounded .shadow-sm}
+  </div>
+  <!-- Add/remove blocks as needed -->
+  <div class="col-12 col-md-6 col-lg-4">
+    ![Inceptive - fig 2](/assets/img/another_image.png){:.img-fluid .rounded .shadow-sm}
+  </div>
+  <div class="col-12 col-md-6 col-lg-4">
+    ![Inceptive - fig 3](/assets/img/flowchart.png){:.img-fluid .rounded .shadow-sm}
+  </div>
+</div>
+
+<!-- If you prefer per-image width control, 
+     replace any image above with e.g.:
+     ![Alt](/assets/img/flowchart.png){:.img-fluid .rounded .shadow-sm width="420"} -->
+
+A modular, lightweight, plug-and-play architecture for enhancing the contextual representations of _**any**_ encoder model. Improves **EIGHT** PLM baselines across **FIVE** tasks for both short/long texts in English and Bangla.
 
 **Supervisor(s):** [Dr. M Saifur Rahman (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mrahman), [Dr. Rifat Shahriyar](https://cse.buet.ac.bd/faculty/faculty_detail/rifat)
 
-[PDF](5GPT_final.pdf){:.btn .btn-sm .btn-outline-secondary} [Code](https://github.com/asif-shahriar11/inceptive-transformer){:.btn .btn-sm .btn-outline-secondary} 
+<!-- Button row: Read more + PDF + Code SIDE BY SIDE -->
+<div class="btn-group btn-group-sm my-2" role="group" aria-label="Inceptive links">
+  <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#more-inceptive" role="button" aria-expanded="false" aria-controls="more-inceptive">
+    Read more
+  </a>
+  <a class="btn btn-outline-secondary" href="/assets/pdf/5GPT_final.pdf" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-secondary" href="https://github.com/asif-shahriar11/inceptive-transformer" target="_blank" rel="noopener">Code</a>
+</div>
 
----
+<!-- Collapsible extra text; uses a unique id -->
+<div class="collapse mt-2" id="more-inceptive">
+  <div markdown="1">
 
-<p style="margin-top:2em;"></p>
+Encoder models are designed to aggregate all token embeddings into a single representation, called the \[CLS\] token, which is later used for downstream tasks like classification. Although it is convenient, the over-reliance on a single representative token can make encoder models insufficient in capturing fine-grained contextual nuances or localized cues critical for tasks like emotion recognition or irony detection \[left figure\]. This issue is even more pronounced in multi-label tasks, which require token-level attention rather than a single sequence-level summary.
+
+In this work we propose _**Inceptive Transformers**_ -- a lightweight and modular architecture that augments a transformer baseline by stacking an inception-style 1-D convolution module on top. Instead of using \[CLS\]-based pooling, we feed the final hidden states from the baseline transformer (e.g. RoBERTa or BioBERT) to a multi-scale feature extraction module. This inception module employs parallel 1-D convolutional filters with varying kernel sizes that are designed to recognize local features, such as key phrases or word combinations that are indicative of specific classifications. The goal of the inception module is to incorporate local features without sacrificing global context, which is achieved by using a residual connection to concatenate the original transformer's hidden states with the multi-scale features. These enriched features are then processed by a self-attention mechanism, which dynamically assigns weights to tokens based on their task-specific contribution, thus allowing the model to effectively prioritize relevant tokens. 
+
+Our experiments demonstrate that Inceptive Transformers consistently outperform both general-purpose baselines (like RoBERTa and DeBERTa v3) and domain-specific ones (like BERTweet and BioBERT). On five different tasks (Bangla and English emotion recognition, irony detection, disease identification, and anti-vaccine concern classification), we observed performance gains from **1%** to as high as **14%** in accuracy and F1-score, with less than 10% inference-time overhead.
+
+  </div>
+</div>
+
+
+<p style="margin-top:3em;"></p>
 
 
 ## Ongoing Works
