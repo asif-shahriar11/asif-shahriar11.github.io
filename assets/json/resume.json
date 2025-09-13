@@ -46,7 +46,7 @@
       "courses": ["Theory of Relativity"]
     }
   ],
-  "research interests": [
+  "interests": [
     {
       "name": "Physics",
       "icon": "fa-solid fa-tag",
@@ -83,7 +83,7 @@
       "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
-  "honours and awards": [
+  "awards": [
     {
       "title": "Nobel Prize in Physics",
       "date": "1921-11-01",
