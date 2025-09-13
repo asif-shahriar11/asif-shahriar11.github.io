@@ -16,30 +16,6 @@ My current research interests span across `Computer security`, `Adversarial ML`,
 
 
 
-<!-- tiny filter script: scans text; no extra deps -->
-<script>
-(function () {
-  const box = document.getElementById('research-search');
-  if (!box) return;
-  const items = Array.from(document.querySelectorAll('h3, h4, h5, p, li, strong, em'));
-  function hay() {
-    return (items.map(n => n.textContent).join(' ') || '').toLowerCase();
-  }
-  let cache = hay();
-  function filter() {
-    const q = box.value.trim().toLowerCase();
-    if (!q) { document.body.classList.remove('filtering'); [...document.querySelectorAll('section, article, div')]; }
-    const blocks = Array.from(document.querySelectorAll('h3, h4, h5')).map(h => h.closest('section, article, div'));
-    blocks.forEach(b => {
-      const txt = (b.textContent || '').toLowerCase();
-      b.style.display = (!q || txt.includes(q)) ? '' : 'none';
-    });
-  }
-  box.addEventListener('input', filter);
-})();
-</script>
-
-
 <p style="margin-top:3em;"></p>
 
 
@@ -68,13 +44,14 @@ Can LLMs like GPT-4 analyze complex cellular protocol specifications to identify
 
 
 <!-- Button row: Read more + PDF + Code SIDE BY SIDE -->
-<div class="btn-group btn-group-sm my-2" role="group" aria-label="5gpt links">
+<div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="5gpt links">
   <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#more-5gpt" role="button" aria-expanded="false" aria-controls="more-5gpt">
     Read more
   </a>
   <a class="btn btn-outline-secondary" href="/assets/pdf/5GPT_final.pdf" target="_blank" rel="noopener">PDF</a>
   <a class="btn btn-outline-secondary" href="/assets/pdf/5GPT_presentation.pdf" target="_blank" rel="noopener">Slides</a>
 </div>
+
 
 <!-- Collapsible extra text; uses a unique id -->
 <div class="collapse mt-2" id="more-5gpt">
@@ -120,7 +97,7 @@ A modular, lightweight, plug-and-play architecture for enhancing the contextual 
 **Supervisor(s):** [Dr. M Saifur Rahman (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mrahman), [Dr. Rifat Shahriyar](https://cse.buet.ac.bd/faculty/faculty_detail/rifat)
 
 <!-- Button row: Read more + PDF + Code SIDE BY SIDE -->
-<div class="btn-group btn-group-sm my-2" role="group" aria-label="Inceptive links">
+<div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="inceptive links">
   <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#more-inceptive" role="button" aria-expanded="false" aria-controls="more-inceptive">
     Read more
   </a>
@@ -179,14 +156,41 @@ After the revolution of LLMs, we now see the rise of agentic frameworks that can
 
 
 
+
+<!-- tiny filter script: scans text; no extra deps -->
 <script>
-  // Toggle "Read more" <-> "Show less" on all research details blocks
-  (function () {
-    document.querySelectorAll('.research-details').forEach(function (d) {
-      const label = d.querySelector('.toggle-label');
-      function update() { label.textContent = d.open ? 'Show less' : 'Read more'; }
-      d.addEventListener('toggle', update);
-      update(); // init
+(function () {
+  const box = document.getElementById('research-search');
+  if (!box) return;
+  const items = Array.from(document.querySelectorAll('h3, h4, h5, p, li, strong, em'));
+  function hay() {
+    return (items.map(n => n.textContent).join(' ') || '').toLowerCase();
+  }
+  let cache = hay();
+  function filter() {
+    const q = box.value.trim().toLowerCase();
+    if (!q) { document.body.classList.remove('filtering'); [...document.querySelectorAll('section, article, div')]; }
+    const blocks = Array.from(document.querySelectorAll('h3, h4, h5')).map(h => h.closest('section, article, div'));
+    blocks.forEach(b => {
+      const txt = (b.textContent || '').toLowerCase();
+      b.style.display = (!q || txt.includes(q)) ? '' : 'none';
     });
-  })();
+  }
+  box.addEventListener('input', filter);
+})();
 </script>
+
+
+
+<!-- Toggle "Read more" <-> "Show less" on collapse buttons -->
+<script>
+document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = document.querySelector(btn.getAttribute('href'));
+    if (!target) return;
+    target.addEventListener('shown.bs.collapse', () => btn.textContent = 'Show less');
+    target.addEventListener('hidden.bs.collapse', () => btn.textContent = 'Read more');
+  });
+});
+</script>
+
