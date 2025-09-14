@@ -26,12 +26,12 @@
   "work": [
     {
       "name": "School of Data and Sciences, BRAC University",
-      "position": "Lecurer, Department of CSE",
+      "position": "Lecturer, Department of CSE",
       "url": "https://cse.sds.bracu.ac.bd/faculty_profile/346/asif_shahriar",
       "startDate": "2024-07-16",
       "endDate": "2025",
       "summary": "",
-      "highlights": ["Artificilal Intelligence", "Data Communications", "Data Structures", "Algorithms"]
+      "highlights": ["Artificial Intelligence", "Data Communications", "Data Structures", "Algorithms"]
     }
   ],
   "education": [
@@ -68,7 +68,7 @@
         "Retrieval Augmented Generation",
         "Secured Agentic Frameworks"
       ]
-    },
+    }
   ],
   "publications": [
     {
