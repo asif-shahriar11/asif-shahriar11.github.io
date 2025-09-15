@@ -53,5 +53,10 @@
 
     <!-- JavaScripts -->
     {% include scripts.liquid %}
+    {% if page.url == "/" or page.permalink == "/" or page.path == "index.html" or page.path == "index.md" %}
+      {% include clustrmaps.liquid %}
+    {% endif %}
+
+
   </body>
 </html>
