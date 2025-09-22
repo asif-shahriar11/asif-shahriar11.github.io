@@ -104,7 +104,7 @@ A modular, lightweight, plug-and-play architecture for enhancing the contextual 
   <a class="btn btn-outline-secondary readmore-btn"
      data-target="#more-inceptive"
      href="javascript:void(0)">Read more</a>
-  <a class="btn btn-outline-secondary" href="/assets/pdf/5GPT_final.pdf" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-secondary" href="/assets/pdf/Inceptive_Transformers_EMNLP.pdf" target="_blank" rel="noopener">PDF</a>
   <a class="btn btn-outline-secondary" href="https://github.com/asif-shahriar11/inceptive-transformer" target="_blank" rel="noopener">Code</a>
 </div>
 
