@@ -32,6 +32,7 @@
   booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
   year={2025},
   abstract={Encoder transformer models compress information from all tokens in a sequence into a single [CLS] token to represent global context. This approach often dilutes fine-grained or hierarchical features, leading to information loss in downstream tasks where local features are important. To remedy this, we propose a lightweight architectural enhancement in the form of an inception-style 1-D convolution module that sits on top of the transformer layer and augments token representations with multi-scale local features. This enriched feature space is then processed by a multi-headed self-attention layer that dynamically weights tokens based on their task relevance. Experiments across five diverse tasks, covering both short and long form texts, show that our framework consistently improves both general-purpose (RoBERTa, DeBERTa v3, ModernBERT), domain-specific (BioBERT, BERTweet, CT-BERT), and multilingual models (XLM-R, BanglaBERT); outperforming the baselines by 1% to 14% while maintaining efficiency. Ablation studies confirm that multi-scale convolution performs better than any single-kernel, and removing the self-attention layer hurts performance.},
+  pdf={Inceptive_Transformers_EMNLP.pdf},
   preview={inceptive_intro.png}
 }
 
