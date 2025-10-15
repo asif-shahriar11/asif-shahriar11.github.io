@@ -21,12 +21,12 @@ nav_order: 1
 
 ---
 
-Nature's first green is gold,
-Her hardest hue to hold.
-Her early leaf's a flower;
-But only so an hour.
-Then leaf subsides to leaf.
-So Eden sank to grief,
-So dawn goes down to day.
-Nothing gold can stay.
+Nature's first green is gold, <br>
+Her hardest hue to hold. <br>
+Her early leaf's a flower; <br>
+But only so an hour. <br>
+Then leaf subsides to leaf. <br>
+So Eden sank to grief, <br>
+So dawn goes down to day. <br>
+Nothing gold can stay. <br>
 -- Robert Frost
