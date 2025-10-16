@@ -145,22 +145,20 @@ In 5GPT, we showed that LLMs are capable of identifying vulnerailities from comp
 
 ---
 
+### Repository-Level Vulnerability Auditing using LLM Agents
+*Ongoing work.*  
+<p style="margin-top:1em;"></p>
+
+Benchmarks like SWE-bench primarily test an agent’s ability to correct an existing, well-documented issue within a codebase (reactive bug-fixing). We investigate the more critical and complex task of proactive security auditing: the ability to review incoming code changes (e.g., a pull request) and identify subtle, hidden security vulnerabilities before they are merged into the main branch. This is fundamentally different and challenging because not only is it inherently ambiguous, but also requires long-context and compositional reasoning capabilities.
+
+
+---
+
 ### Cross-modal Deception: There is More than what Meets the Eyes
 *Ongoing work.*  
 <p style="margin-top:1em;"></p>
 
 In traditiional jailbreak attacks, user is the adversary while LLM is the victim. The user attempts a number of techniques to elicit harmful responses that the model would generally not produce. In this work we aim to introduce a novel class of attacks that deceive both the user and the VLM. The model is compromised by a hidden instructions, while the human user, who may be interacting with the model through a completely benign-looking image, is an unwitting participant in the attack. If successful, the implications of this attack could be huge.
-
-**Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
-
-
----
-
-### Secured Multi-agent Systems
-*Ongoing work.*  
-<p style="margin-top:1em;"></p>
-
-After the revolution of LLMs, we now see the rise of agentic frameworks that can browse the web, perform grocery shopping from amazon, run OS commands, and what not. _**But what about security?**_ What if the _cheapest deal_ is being offered at a _phishing website?_ That's what we aim to find out.
 
 **Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
 
