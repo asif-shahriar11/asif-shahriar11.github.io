@@ -8,15 +8,11 @@ nav_order: 2
 ---
 
 <!-- minimal HTML only for type-to-filter -->
-My current research interests include: <br>
+To portray the core themes of my research, here is a wordle generated from the introductions of my peer-reviewerd papers and arXiv preprints.
 
-- 💻 `Computer security`, `AI for security`, `Security for AI` <br>
-- ⚔️ `Adversarial ML`,  `Trustworthy Generative AI`,  `Secured Agentic Frameworks` <br>
-- 📖 `Natural language processing`, `Large Language Models`, `Retrieval-Augmented Generation` <br>
+![Key research themes](/assets/img/research_wordcloud.png){:.img-fluid .rounded .shadow-sm width="800"} <br>
 
 
-
-<input id="research-search" class="form-control list-search" type="search" placeholder="Type to filter: topic, title, venue, year, supervisor…" />
 
 
 
@@ -114,6 +110,46 @@ Encoder models are designed to aggregate all token embeddings into a single repr
 In this work we propose _**Inceptive Transformers**_ -- a lightweight and modular architecture that augments a transformer baseline by stacking an inception-style 1-D convolution module on top. Instead of using \[CLS\]-based pooling, we feed the final hidden states from the baseline transformer (e.g. RoBERTa or BioBERT) to a multi-scale feature extraction module. This inception module employs parallel 1-D convolutional filters with varying kernel sizes that are designed to recognize local features, such as key phrases or word combinations that are indicative of specific classifications. The goal of the inception module is to incorporate local features without sacrificing global context, which is achieved by using a residual connection to concatenate the original transformer's hidden states with the multi-scale features. These enriched features are then processed by a self-attention mechanism, which dynamically assigns weights to tokens based on their task-specific contribution, thus allowing the model to effectively prioritize relevant tokens. 
 
 Our experiments demonstrate that Inceptive Transformers consistently outperform both general-purpose baselines (like RoBERTa and DeBERTa v3) and domain-specific ones (like BERTweet and BioBERT). On five different tasks (Bangla and English emotion recognition, irony detection, disease identification, and anti-vaccine concern classification), we observed performance gains from **1%** to as high as **14%** in accuracy and F1-score, with less than 10% inference-time overhead.
+<!-- (keep your full extra text here) -->
+</div>
+
+
+
+
+
+
+---
+
+### A Survey on Agentic Security: Applications, Threats and Defenses
+*arXiv preprint, 2025.*
+
+
+<!-- If you prefer per-image width control, 
+     replace any image above with e.g.:
+     ![Alt](/assets/img/flowchart.png){:.img-fluid .rounded .shadow-sm width="420"} -->
+
+<p style="margin-top:2em;"></p>
+
+In this work we present the first holistic survey of the **agentic security** landscape, structuring the field around three interdependent pillars: **Applications, Threats, and Defenses.** We provide a comprehensive taxonomy of over 150 papers, explaining how agents are used, the vulnerabilities they possess, and the countermeasures designed to protect them. A detailed cross-cutting analysis shows emerging trends in agent architecture while revealing critical research gaps in model and modality coverage.
+
+**Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
+
+<div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="Agentic security links">
+  <a class="btn btn-outline-secondary readmore-btn"
+     data-target="#more-agentic-security"
+     href="javascript:void(0)">Read more</a>
+  <a class="btn btn-outline-secondary" href="/assets/pdf/Agentic_security_survey_arXiv.pdf" target="_blank" rel="noopener">PDF</a>
+</div>
+
+<div id="more-agentic-security" class="mt-2 d-none" markdown="1">
+The rapid shift from passive LLMs to autonomous LLM-agents marks a new paradigm in cybersecurity. While these agents can act as powerful tools for both offensive and defensive operations, the very agentic context introduces a new class of inherent security risks. Existing surveys provide valuable insights into specific aspects like security threats, trustworthiness, enterprise governance and core LLM safety, but they fail to capture the complete picture, leaving practitioners and researchers without a unified framework for understanding how agent capabilities, vulnerabilities, and defenses interconnect.
+
+In this work we present the first holistic survey of the agentic security landscape, structured to answer three key questions a security researcher would ask: *“What can agents do for my security?”* (Applications), *“How can they be attacked?”* (Threats), and *“How do I stop them?”* (Defenses). To this end, we define three pillars of taxonomy:
+- **Applications.** Using LLM-agents in downstream cybersecurity tasks, including red teaming (autonomous vulnerability discovery), blue teaming (defending against threats), and domain-specific security (cloud, web). <br>
+- **Threats.** Security vulnerabilities inherent to agentic systems that attackers can exploit. <br>
+- **Defenses.** Techniques and countermeasures used to harden agentic systems against the threats.
+  
+By uniquely bridging these three pillars, we provide a complete picture of the current state of the art, transforming a scattered collection of individual research efforts into an actionable body of knowledge. Additionally, we identify key trends and critical gaps in existing literature— for example, the migration from monolithic to planner-executor and multi-agent architectures, almost exclusive focus on single commercial LLM (GPT), uneven threat and modality coverage (RAG poisoning under-defended, few works on images), and benchmark fragmentation.
 <!-- (keep your full extra text here) -->
 </div>
 
