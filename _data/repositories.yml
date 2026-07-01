@@ -1,14 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - asif-shahriar11
 
 repo_description_lines_max: 2
 
+# Add specific repo names here (as "username/repo") to feature them on the /repositories/ page.
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
