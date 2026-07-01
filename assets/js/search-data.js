@@ -39,17 +39,10 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Click the button on the right to download a PDF version. For more information, feel free to drop an email.",
+          description: "Use the buttons below to download or open the PDF in a new tab. For more information, feel free to drop an email.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "A selection of my GitHub activity and repositories.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
           },
         },{id: "news-landed-my-first-job-as-a-full-time-lecturer-in-cse-department-of-brac-university-hello-academia",
           title: 'Landed my first job as a full-time lecturer in CSE department of BRAC...',
