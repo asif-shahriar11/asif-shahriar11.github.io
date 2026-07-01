@@ -5,7 +5,5 @@ title: CV
 nav: true
 nav_order: 6
 cv_pdf: asif_shahriar_CV.pdf # you can also use external links here
-description: Click the button on the right to download a PDF version. For more information, feel free to drop an email.
-toc:
-  sidebar: left
+description: Use the buttons below to download or open the PDF in a new tab. For more information, feel free to drop an email.
 ---

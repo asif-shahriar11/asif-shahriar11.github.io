@@ -47,8 +47,10 @@ You can also find me on &nbsp; &nbsp; &nbsp; [LinkedIn](https://www.linkedin.com
 
 <p style="margin-top:2em;"></p>
 
-### research interests
+### Research Interests
 My research focuses on computer security: identifying vulnerabilities in systems and software, and developing robust defenses. Given the capabilities of current generative AI models, I'm particularly interested in their applicability for vulnerability detection as well as investigating their inherent security risks. I am also inrested in investigating deep, hidden bias in LLM-generated content, such as narrative or compositional bias.
+
+I have also served as a peer reviewer for **IEEE Transactions on Cybernetics** and **Cybersecurity**.
 
 To portray the core themes of my research, here is a wordle generated from the introductions of my peer-reviewerd papers and arXiv preprints.
 

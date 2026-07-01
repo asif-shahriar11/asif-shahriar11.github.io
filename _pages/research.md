@@ -8,12 +8,6 @@ nav_order: 2
 ---
 
 <!-- minimal HTML only for type-to-filter -->
-To portray the core themes of my research, here is a wordle generated from the introductions of my peer-reviewerd papers and arXiv preprints.
-
-![Key research themes](/assets/img/research_wordcloud.png){:.img-fluid .rounded .shadow-sm width="800"} <br>
-
-
-
 
 
 

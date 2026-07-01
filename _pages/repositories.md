@@ -3,8 +3,7 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: A selection of my GitHub activity and repositories.
-nav: true
-nav_order: 8
+nav: false
 ---
 
 {% if site.data.repositories.github_users %}
