@@ -32,7 +32,7 @@
   booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
   year={2025},
   abstract={Encoder transformer models compress information from all tokens in a sequence into a single [CLS] token to represent global context. This approach often dilutes fine-grained or hierarchical features, leading to information loss in downstream tasks where local features are important. To remedy this, we propose a lightweight architectural enhancement in the form of an inception-style 1-D convolution module that sits on top of the transformer layer and augments token representations with multi-scale local features. This enriched feature space is then processed by a multi-headed self-attention layer that dynamically weights tokens based on their task relevance. Experiments across five diverse tasks, covering both short and long form texts, show that our framework consistently improves both general-purpose (RoBERTa, DeBERTa v3, ModernBERT), domain-specific (BioBERT, BERTweet, CT-BERT), and multilingual models (XLM-R, BanglaBERT); outperforming the baselines by 1% to 14% while maintaining efficiency. Ablation studies confirm that multi-scale convolution performs better than any single-kernel, and removing the self-attention layer hurts performance.},
-  pdf={Inceptive_Transformers_EMNLP.pdf},
+  pdf={2025.emnlp-main.1312.pdf},
   preview={inceptive_intro.png},
   doi={https://doi.org/10.48550/arXiv.2505.20496},
   slides={EMNLP 2025_main-2943_slides.pdf}
@@ -46,7 +46,7 @@
   booktitle={ArXiv},
   year={2025},
   abstract={The rapid shift from passive LLMs to autonomous LLM-agents marks a new paradigm in cybersecurity. While these agents can act as powerful tools for both offensive and defensive operations, the very agentic context introduces a new class of inherent security risks. In this work we present the first holistic survey of the agentic security landscape, structuring the field around three interdependent pillars: Applications, Threats, and Defenses. We provide a comprehensive taxonomy of over 150 papers, explaining how agents are used, the vulnerabilities they possess, and the countermeasures designed to protect them. A detailed cross-cutting analysis shows emerging trends in agent architecture while revealing critical research gaps in model and modality coverage. },
-  pdf={Agentic_security_survey_arXiv.pdf},
+  pdf={2510.06445v3.pdf},
   preview={agents_survey_figs.gif},
   doi={https://doi.org/10.48550/arXiv.2510.06445}
 }
@@ -60,6 +60,7 @@
   year={2026},
   abstract={Researchers and practitioners increasingly apply Large Language Models (LLMs) for automated vulnerability detection. Recent work has shown that LLMs are susceptible to the same cognitive heuristics that bias human judgment. Yet, no work has investigated whether these heuristics affect a model's assessment of code vulnerabilities. In this paper, we present the first systematic exploration of cognitive heuristics in LLM-driven code vulnerability detection. We introduce a controlled framework that holds the code fixed and only varies the surrounding context to trigger three cognitive heuristics: the halo effect through author attribution, the framing effect through task objectives and consequences, and the anchoring effect through prior analysis results. Within this framework, we evaluate eight LLMs across three programming languages and perform both quantitative and code-level analyses. Our findings demonstrate that all evaluated models are susceptible to these heuristics. Cross-model average susceptibility is highest for framing at 33.2%, followed by anchoring at 23.5% and halo at 18.4%. Code-level analysis reveals that vulnerabilities that require semantic reasoning for detection are more susceptible to cognitive heuristics than those identifiable through pattern matching. Furthermore, models often change their verdict from safe to vulnerable based on the cognitive condition, without accurately identifying the actual vulnerability. To highlight the practical impact, we demonstrate a proof-of-concept black-box cognitive attack that can suppress up to 97% of previously detected vulnerabilities. These findings indicate that cognitive susceptibility is a consistent and exploitable property of LLM-based vulnerability detection.},
   pdf={cognitive-heuristics-arxiv.pdf},
+  preview={fig_susceptibility_tier_vertical.png},
   doi={https://doi.org/10.48550/arXiv.2606.30587}
 }
 
