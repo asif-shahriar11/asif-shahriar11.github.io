@@ -9,10 +9,14 @@ profile:
   image: IMG_3112.jpeg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>4th floor, Room No # 4M124</p>
-    <p>Department of CSE</p>
-    <p>Brac University</p>
-    <p>Merul Badda, Dhaka </p>
+    <p class="profile-line">Lecturer, Dept of CSE, BRAC University (2024–)</p>
+    <p class="profile-line">Graduate, CSE, BUET (2024)</p>
+    <p class="profile-icons">
+      <a href="https://scholar.google.com/citations?user=JzWK7fS2qRUC&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      <a href="https://github.com/asif-shahriar11" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/asif-shahriar-0135a82a8/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="/assets/pdf/asif_shahriar_CV.pdf" target="_blank" rel="noopener noreferrer" title="CV"><i class="fa-solid fa-file-pdf"></i></a>
+    </p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -29,9 +33,9 @@ latest_posts:
 ---
 
 
-Hi! My name is Asif Shahriar, but you can call me Asif. I am currently working as a Lecturer in the [CSE department](https://cse.sds.bracu.ac.bd/) of [BRAC University](https://www.bracu.ac.bd/). I completed my B.Sc. in CSE from [Bangladesh University of Engineering and Technology (BUET)](https://cse.buet.ac.bd/) in 2024. My current research interests center on the aspects `Security` and `Trustworthiness` _(we do not work with someone we do not trust, why should it be any different for the technology we use?)_. I also enjoy working on core model architectures for task-specific goals. Alongside performance improvement, I also value **efficiency**, **modularity**, and **scalability**.
+Hi! My name is Asif Shahriar. I am currently working as a Lecturer in the [CSE department](https://cse.sds.bracu.ac.bd/) of [BRAC University](https://www.bracu.ac.bd/). I completed my B.Sc. (with Honours) in CSE from [Bangladesh University of Engineering and Technology (BUET)](https://cse.buet.ac.bd/) in 2024. 
 
-My undergrad thesis was on using LLMs for identifying vulnerabilities from 5G specifications through a combination of **zero-shot** and **in-context** learning, which has been published in [IEEE Transactions on Information Forensics and Security](https://ieeexplore.ieee.org/document/11072222). In addition, I developed an inception-style multi-scale feature extraction framework for enhancing the contextual representations of _**any**_ encoder transformer model, which has been accepted for presentation in the main conference of [EMNLP 2025](https://2025.emnlp.org/). 
+My research sits at the intersection of **security** and **AI**. I work on **applying foundation models to security analysis tasks**, such as automated vulnerability detection and protocol analysis. I also study the **behavioral security of LLMs and LLM agents**, with particular emphasis on failure modes that emerge from an agent's interaction history and framing rather than explicit malicious input. Outside of security, I enjoy working on core model architectures for task-specific goals, and investigating the trustworthiness of foundation models. My research has been published in [IEEE Transactions on Information Forensics and Security (TIFS)](https://ieeexplore.ieee.org/document/11072222) and [EMNLP 2026](https://aclanthology.org/2025.emnlp-main.1312/).
 
 I have also served as a peer reviewer for [EMNLP 2026](https://2026.emnlp.org/), [IEEE Transactions on Cybernetics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036) and [Cybersecurity (Springer)](https://link.springer.com/journal/42400).
 
@@ -44,12 +48,14 @@ If you'd like to get in touch, please drop me an email.
 
 **Work email:** asif (dot) shahriar (at) bracu (dot) ac (dot) bd
 
-You can also find me on &nbsp; &nbsp; &nbsp; [LinkedIn](https://www.linkedin.com/in/asif-shahriar-0135a82a8/) / [GitHub](https://github.com/asif-shahriar11) / [Google Scholar](https://scholar.google.com/citations?user=JzWK7fS2qRUC&hl=en)
-
-
 <p style="margin-top:2em;"></p>
 
 ### Research Interests
-My research focuses on computer security: identifying vulnerabilities in systems and software, and developing robust defenses. Given the capabilities of current generative AI models, I'm particularly interested in their applicability for vulnerability detection as well as investigating their inherent security risks. To portray the core themes of my research, here is a wordle generated from the introductions of my peer-reviewerd papers and arXiv preprints.
+
+- Computer security, AI security, Agentic security
+
+- Trustworthy AI, Human factors in security
+
+To portray the core themes of my research, here is a wordle generated from the introductions of my peer-reviewerd papers and arXiv preprints.
 
 ![Key research themes](/assets/img/research_wordcloud_lmroman.png){:.img-fluid .rounded .shadow-sm width="800"} <br>

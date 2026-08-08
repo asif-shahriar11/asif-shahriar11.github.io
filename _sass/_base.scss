@@ -204,6 +204,32 @@ ul.task-list input[type="checkbox"] {
       display: inline-block;
       margin: 0;
     }
+
+    .profile-line {
+      display: block;
+    }
+
+    .profile-icons {
+      display: block;
+      margin-top: 0.6rem;
+
+      a {
+        margin-right: 0.9rem;
+
+        i {
+          font-size: 1.6rem;
+        }
+
+        i::before {
+          color: var(--global-text-color);
+          transition-property: all 0.2s ease-in-out;
+        }
+
+        &:hover i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
   }
 }
 
