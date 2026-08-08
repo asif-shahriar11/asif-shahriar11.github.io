@@ -6,7 +6,7 @@ subtitle: Learn. Persist. Improve. In that order.
 
 profile:
   align: right
-  image: bracu_photo.jpg
+  image: IMG_3112.HEIC
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>4th floor, Room No # 4M124</p>
@@ -33,7 +33,7 @@ Hi! My name is Asif Shahriar, but you can call me Asif. I am currently working a
 
 My undergrad thesis was on using LLMs for identifying vulnerabilities from 5G specifications through a combination of **zero-shot** and **in-context** learning, which has been published in [IEEE Transactions on Information Forensics and Security](https://ieeexplore.ieee.org/document/11072222). In addition, I developed an inception-style multi-scale feature extraction framework for enhancing the contextual representations of _**any**_ encoder transformer model, which has been accepted for presentation in the main conference of [EMNLP 2025](https://2025.emnlp.org/). 
 
-I have also served as a peer reviewer for [IEEE Transactions on Cybernetics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036) and [Cybersecurity (Springer)](https://link.springer.com/journal/42400).
+I have also served as a peer reviewer for [EMNLP 2026](https://2026.emnlp.org/), [IEEE Transactions on Cybernetics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036) and [Cybersecurity (Springer)](https://link.springer.com/journal/42400).
 
 I am grateful to all the mentors and supervisors who have guided and supported me throughout my academic and research journey. I believe in _“persistence until improvement”_, even if it requires going the extra mile – and hope my students would, too.
 
