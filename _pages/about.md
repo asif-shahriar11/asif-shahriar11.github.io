@@ -6,7 +6,7 @@ subtitle: Learn. Persist. Improve. In that order.
 
 profile:
   align: right
-  image: IMG_3112.HEIC
+  image: IMG_3112.jpeg
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>4th floor, Room No # 4M124</p>
