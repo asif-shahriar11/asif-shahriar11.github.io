@@ -15,7 +15,7 @@ profile:
       <a href="https://scholar.google.com/citations?user=JzWK7fS2qRUC&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
       <a href="https://github.com/asif-shahriar11" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/asif-shahriar-0135a82a8/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="/assets/pdf/asif_shahriar_CV.pdf" target="_blank" rel="noopener noreferrer" title="CV"><i class="fa-solid fa-file-pdf"></i></a>
+      <a href="/assets/pdf/asif_shahriar_CV.pdf" target="_blank" rel="noopener noreferrer" title="CV"><i class="ai ai-cv"></i></a>
     </p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -35,7 +35,7 @@ latest_posts:
 
 Hi! My name is Asif Shahriar. I am currently working as a Lecturer in the [CSE department](https://cse.sds.bracu.ac.bd/) of [BRAC University](https://www.bracu.ac.bd/). I completed my B.Sc. (with Honours) in CSE from [Bangladesh University of Engineering and Technology (BUET)](https://cse.buet.ac.bd/) in 2024. 
 
-My research sits at the intersection of **security** and **AI**. I work on **applying foundation models to security analysis tasks**, such as automated vulnerability detection and protocol analysis. I also study the **behavioral security of LLMs and LLM agents**, with particular emphasis on failure modes that emerge from an agent's interaction history and framing rather than explicit malicious input. Outside of security, I enjoy working on core model architectures for task-specific goals, and investigating the trustworthiness of foundation models. My research has been published in [IEEE Transactions on Information Forensics and Security (TIFS)](https://ieeexplore.ieee.org/document/11072222) and [EMNLP 2026](https://aclanthology.org/2025.emnlp-main.1312/).
+My research sits at the intersection of **security** and **AI**. I work on **applying foundation models to security analysis tasks**, such as automated vulnerability detection and protocol analysis. I also study the **behavioral security of LLMs and LLM agents**, with particular emphasis on failure modes that emerge from an agent's interaction history and framing rather than explicit malicious input. Outside of security, I enjoy working on core model architectures for task-specific goals, and investigating the trustworthiness of foundation models. My research has been published in [IEEE Transactions on Information Forensics and Security (TIFS)](https://ieeexplore.ieee.org/document/11072222) and [EMNLP 2025](https://aclanthology.org/2025.emnlp-main.1312/).
 
 I have also served as a peer reviewer for [EMNLP 2026](https://2026.emnlp.org/), [IEEE Transactions on Cybernetics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036) and [Cybersecurity (Springer)](https://link.springer.com/journal/42400).
 

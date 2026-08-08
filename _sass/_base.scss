@@ -210,12 +210,12 @@ ul.task-list input[type="checkbox"] {
     }
 
     .profile-icons {
-      display: block;
+      display: flex;
+      justify-content: center;
+      gap: 0.9rem;
       margin-top: 0.6rem;
 
       a {
-        margin-right: 0.9rem;
-
         i {
           font-size: 1.6rem;
         }
