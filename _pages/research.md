@@ -18,6 +18,46 @@ nav_order: 2
 
 ---
 
+### Words Speak Louder Than Code: Investigating Cognitive Heuristics in LLM-Based Code Vulnerability Detection
+***arXiv preprint, 2026.***
+
+<p style="margin-top:1em;"></p>
+
+![Cognitive manipulation methodology](/assets/img/fig_cognitive_methodology.png){:.img-fluid .rounded .shadow-sm width="900"} <br>
+_Fig: Controlled framework for triggering cognitive heuristics in LLM-based vulnerability detection_
+
+<p style="margin-top:1em;"></p>
+
+| ![Cognitive trigger example](/assets/img/fig_cognitive_trigger.png){: width="400"} | ![Susceptibility tiers](/assets/img/fig_susceptibility_tier_vertical.png){: width="230"} | ![Volume-knob effect](/assets/img/fig_volume_knob.png){: width="190"} |
+|:--:|:--:|:--:|
+| Halo effect flipping a verdict on the same code | Model susceptibility across heuristics | The volume-knob effect on recall and FPR |
+
+<p style="margin-top:2em;"></p>
+
+In this work we have discovered that when we ask an LLM whether a code is vulnerable or safe, its response is significantly influenced by who wrote the code, how the task is framed, and what a previous verdict was -- signals that have nothing to do with the actual security of the code. This is a form of cognitive bias, the same kind of mental shortcut that skews human judgment under uncertainty, now showing up in how models make security decisions. For instance, if the code is attributed to a well-known, high-prestige author, the model tends to call it safe; but when the exact same code is attributed to a less-reputed author, the model calls it vulnerable. This is known as the halo effect. Similarly, describing the consequence of missing a bug versus the benefit of catching one can flip a model's verdict on identical code, which we call the framing effect, and simply showing the model a prior result, such as a passed security check, can anchor its judgment regardless of what the code actually contains, which we call the anchoring effect. Our experiments show that framing effect has the most influence on a model's security verdicts, followed by anchoring and halo. To highlight the practical impact, we demonstrate a proof-of-concept black-box cognitive attack that can suppress up to 97% of previously detected vulnerabilities.
+
+**Supervisor(s):** [Dr. Z. Berkay Celik (Purdue)](https://beerkay.github.io/), [Dr. Gang Wang (UIUC)](https://gangw.cs.illinois.edu/index.html)
+
+<div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="cognitive heuristics links">
+  <a class="btn btn-outline-secondary readmore-btn"
+     data-target="#more-cognitive-heuristics"
+     href="javascript:void(0)">Read more</a>
+  <a class="btn btn-outline-secondary" href="/assets/pdf/cognitive-heuristics-arxiv.pdf" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-secondary" href="https://github.com/purseclab/cognitive-heuristics-vuln-detect" target="_blank" rel="noopener">Code</a>
+</div>
+
+<div id="more-cognitive-heuristics" class="mt-2 d-none" markdown="1">
+Large language models are no longer just coding assistants; they are being deployed as automated vulnerability detectors in real-world systems. Anthropic's Claude Opus recently discovered dozens of zero-day vulnerabilities in Mozilla Firefox, GitHub's Copilot Autofix reviews pull requests and triages security alerts in CI/CD pipelines, and AppSec platforms like ZeroPath use LLMs to find and fix vulnerabilities. As these models take on the role of automated security gatekeepers, the reliability of their security verdicts becomes critical.
+
+Decades of psychology research have shown that humans often rely on cognitive heuristics, or mental shortcuts, to make judgments under uncertainty. Since LLMs are trained on massive corpora of human-generated text, they inherit these same patterns in question answering, evaluation, and general reasoning. Prior work on LLM-driven vulnerability detection has focused almost entirely on the code itself. But LLM-based scanners in deployment do not see code in isolation; they routinely receive non-code context such as author identity, task directives, documentation strings, commit messages, and static analysis results alongside the code under review. This context can read as either reassuring or alarming to the model, and if a vulnerability detector is biased by these signals, it can reach different verdicts on identical code depending on who wrote it, how the task is phrased, or what the prior verdict was, none of which should matter in a security analysis.
+
+In this work, we present the first systematic investigation of cognitive heuristics in LLM-based vulnerability detection. We design a controlled framework that holds the code fixed and varies only the surrounding context, evaluating three heuristics, halo, framing, and anchoring, across eight LLMs and three programming languages. Beyond documenting these biases, we ask whether they can be exploited adversarially: we build a proof-of-concept attack that forges commit metadata and fabricated prior scan results to suppress detection in a simulated CI/CD scanner, and we test whether prompt-based defenses can stop it.
+</div>
+
+
+
+---
+
 ### 5GPT: 5G Vulnerability Detection by Combining Zero-Shot Capabilities of GPT-4 With Domain-Aware Strategies Through Prompt Engineering
 ***IEEE Transactions on Information Forensics and Security, 2025.***  
 
@@ -63,7 +103,7 @@ We also compared our findings against a white-box model, Mobile-LLaMA, and found
 ---
 
 ### Inceptive Transformers: Enhancing Contextual Representations through Multi-Scale Feature Learning Across Domains and Languages
-*Accepted for presentation in **EMNLP 2025**.*
+***EMNLP 2025 main conference**.*
 
 <p style="margin-top:1em;"></p>
 
