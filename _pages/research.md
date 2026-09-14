@@ -19,7 +19,7 @@ nav_order: 2
 ---
 
 ### Words Speak Louder Than Code: Investigating Cognitive Heuristics in LLM-Based Code Vulnerability Detection
-***arXiv preprint, 2026.***
+***IEEE Symposium on Security and Privacy (2027)***
 
 <p style="margin-top:1em;"></p>
 
