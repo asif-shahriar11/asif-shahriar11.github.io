@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Peer-reviewed publications in reversed chronological order. Greatly indebted to all my co-authors, supervisors, and collaborators for their invaluable contributions.",
+          description: "Peer-reviewed publications in reversed chronological order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -48,6 +48,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-my-first-authored-paper-inceptive-transformers-has-been-accepted-for-presentation-in-the-main-conference-of-emnlp-2025-see-you-all-in-suzhou",
           title: 'My first-authored paper Inceptive Transformers has been accepted for presentation in the main...',
+          description: "",
+          section: "News",},{id: "news-my-first-authored-paper-on-cognitive-heuristics-in-llm-based-code-vulnerability-detection-has-been-accepted-in-ieee-s-amp-amp-p-2027",
+          title: 'My first-authored paper on Cognitive Heuristics in LLM-based Code Vulnerability Detection has been...',
           description: "",
           section: "News",},{
         id: 'social-email',
