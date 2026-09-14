@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Peer-reviewed publications in reversed chronological order. Greatly indebted to all my co-authors, supervisors, and collaborators for their invaluable contributions.
+description: Peer-reviewed publications in reversed chronological order.
 nav: true
 nav_order: 1
 ---
