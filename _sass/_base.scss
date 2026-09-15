@@ -19,6 +19,12 @@ strong {
   color: var(--global-text-color);
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", Georgia, "Times New Roman", serif;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -198,7 +204,6 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
 
     p {
       display: inline-block;
@@ -207,6 +212,9 @@ ul.task-list input[type="checkbox"] {
 
     .profile-line {
       display: block;
+      color: var(--global-text-color-light);
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
 
     .profile-icons {
