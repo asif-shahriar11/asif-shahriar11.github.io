@@ -21,6 +21,10 @@ $green-color-bright: #11d68b !default;
 $purple-color: #b509ac !default;
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
 $maroon-color: #7a2530 !default;
+// Tuned for use on light backgrounds: the raw $maroon-color reads dull/muddy on white,
+// so this is the same hue made a bit richer and brighter (not a different color family).
+$maroon-color-on-light: color.adjust($maroon-color, $lightness: 8%, $saturation: 15%);
+// Tuned for use on dark backgrounds: lightened so it pops against a dark ground.
 $light-maroon-color: color.adjust($maroon-color, $lightness: 25%);
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
