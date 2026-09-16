@@ -164,7 +164,7 @@ Our experiments demonstrate that Inceptive Transformers consistently outperform 
 
 <p style="margin-top:2em;"></p>
 
-In this work we present the first holistic survey of the **agentic security** landscape, structuring the field around three interdependent pillars: **Applications, Threats, and Defenses.** We provide a comprehensive taxonomy of over 150 papers, explaining how agents are used, the vulnerabilities they possess, and the countermeasures designed to protect them. A detailed cross-cutting analysis shows emerging trends in agent architecture while revealing critical research gaps in model and modality coverage.
+In this work we present the first holistic survey of the **agentic security** landscape, structuring the field around three interdependent pillars: **Applications, Threats, and Defenses.** We provide a comprehensive taxonomy of over 250 papers, explaining how agents are used, the vulnerabilities they possess, and the countermeasures designed to protect them. Beyond cataloguing these pillars, we analyze each one and then present a cross-cutting analysis. For **applications**, we map every system onto the offensive and defensive lifecycles, study their differences, identify research clusters and examine the dual-use nature of red-teaming agents. For **threats**, we analyze the channels through which attacks enter and the agent-loop stages where they manifest, the specificity of each threat to the agentic setting, the threat models attackers assume, and the benchmarks used to measure them. For **defenses**, we analyze the defense strategies along scalability, robustness, overhead, and coverage, and examine where in the agent lifecycle protection is placed. Finally, we read across the full corpus along several axes, including the coverage of each attack class by existing defenses, agent architecture and cardinality, backbone model usage, data modality coverage, and the temporal distribution of attack and defense research.
 
 **Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
 
@@ -183,7 +183,15 @@ In this work we present the first holistic survey of the agentic security landsc
 - **Threats.** Security vulnerabilities inherent to agentic systems that attackers can exploit. <br>
 - **Defenses.** Techniques and countermeasures used to harden agentic systems against the threats.
   
-By uniquely bridging these three pillars, we provide a complete picture of the current state of the art, transforming a scattered collection of individual research efforts into an actionable body of knowledge. Additionally, we identify key trends and critical gaps in existing literature— for example, the migration from monolithic to planner-executor and multi-agent architectures, almost exclusive focus on single commercial LLM (GPT), uneven threat and modality coverage (RAG poisoning under-defended, few works on images), and benchmark fragmentation.
+By uniquely bridging these three pillars, we provide a complete picture of the current state of the art, transforming a scattered collection of individual research efforts into an actionable body of knowledge. Additionally, we identify key trends and critical gaps in existing literature.
+- Security-lifecycle coverage is highly uneven. <br>
+- Offensive and defensive agents are diverging in autonomy. Offensive systems are converging on full autonomy while defensive systems still rely on human approval. <br>
+- Red teaming agents are inherently dual-use. <br>
+- The agentic failure stage is often different from where the attack enters. <br>
+- The most studied threats to agentic systems are the ones that carry over from the base LLM, or get amplified due to agentic scaffolding. The purely agent-native threat surfaces, such as inter-agent communication, memory and reflection stages, are simultaneously the least attacked and the least benchmarked. <br>
+- No defense strategy is adequate alone. <br>
+- Stronger protection costs more time and tokens. <br>
+- Defense coverage does not match the threat distribution. 
 <!-- (keep your full extra text here) -->
 </div>
 
@@ -215,22 +223,22 @@ In 5GPT, we showed that LLMs are capable of identifying vulnerailities from comp
 
 ---
 
-### Repository-Level Vulnerability Auditing using LLM Agents
+<!-- ### Repository-Level Vulnerability Auditing using LLM Agents
 *Ongoing work.*  
 <p style="margin-top:1em;"></p>
 
 Benchmarks like SWE-bench primarily test an agent’s ability to correct an existing, well-documented issue within a codebase (reactive bug-fixing). We investigate the more critical and complex task of proactive security auditing: the ability to review incoming code changes (e.g., a pull request) and identify subtle, hidden security vulnerabilities before they are merged into the main branch. This is fundamentally different and challenging because not only is it inherently ambiguous, but also requires long-context and compositional reasoning capabilities.
 
 
----
+--- -->
 
-### Cross-modal Deception: There is More than what Meets the Eyes
+<!-- ### Cross-modal Deception: There is More than what Meets the Eyes
 *Ongoing work.*  
 <p style="margin-top:1em;"></p>
 
 In traditiional jailbreak attacks, user is the adversary while LLM is the victim. The user attempts a number of techniques to elicit harmful responses that the model would generally not produce. In this work we aim to introduce a novel class of attacks that deceive both the user and the VLM. The model is compromised by a hidden instructions, while the human user, who may be interacting with the model through a completely benign-looking image, is an unwitting participant in the attack. If successful, the implications of this attack could be huge.
 
-**Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
+**Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez) -->
 
 
 
