@@ -28,6 +28,14 @@ nav_order: 4
 
 <p style="margin-top:2em;"></p>
 
+### Research Experience
+
+- **Research Intern (Remote) \[Dec 2025 - present\]** <br>
+  PurSec Lab, Purdue University <br>
+  Advisor: Prof. Z. Berkay Celik
+
+<p style="margin-top:2em;"></p>
+
 ### Work
 
 - **Lecturer \[2024 - present\]** <br>
