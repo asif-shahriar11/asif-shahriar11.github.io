@@ -13,9 +13,6 @@ nav_order: 2
 
 <p style="margin-top:3em;"></p>
 
-
-## Completed Works
-
 ---
 
 ### Words Speak Louder Than Code: Investigating Cognitive Heuristics in LLM-Based Code Vulnerability Detection
@@ -52,6 +49,57 @@ Large language models are no longer just coding assistants; they are being deplo
 Decades of psychology research have shown that humans often rely on cognitive heuristics, or mental shortcuts, to make judgments under uncertainty. Since LLMs are trained on massive corpora of human-generated text, they inherit these same patterns in question answering, evaluation, and general reasoning. Prior work on LLM-driven vulnerability detection has focused almost entirely on the code itself. But LLM-based scanners in deployment do not see code in isolation; they routinely receive non-code context such as author identity, task directives, documentation strings, commit messages, and static analysis results alongside the code under review. This context can read as either reassuring or alarming to the model, and if a vulnerability detector is biased by these signals, it can reach different verdicts on identical code depending on who wrote it, how the task is phrased, or what the prior verdict was, none of which should matter in a security analysis.
 
 In this work, we present the first systematic investigation of cognitive heuristics in LLM-based vulnerability detection. We design a controlled framework that holds the code fixed and varies only the surrounding context, evaluating three heuristics, halo, framing, and anchoring, across eight LLMs and three programming languages. Beyond documenting these biases, we ask whether they can be exploited adversarially: we build a proof-of-concept attack that forges commit metadata and fabricated prior scan results to suppress detection in a simulated CI/CD scanner, and we test whether prompt-based defenses can stop it.
+</div>
+
+
+
+---
+
+### AgentTell: Behavioural Side-Channel Leakage in Browser-Use Agents
+***Under review, ICLR 2027.***
+
+<p style="margin-top:1em;"></p>
+
+![AgentTell motivating example](/assets/img/agenttell_motivating_example.png){:.img-fluid .rounded .shadow-sm width="900"} <br>
+_Fig: Motivating example: an affiliation the agent read on one website leaks through its choice of action on another_
+
+<p style="margin-top:1em;"></p>
+
+![AgentTell leakage heatmap](/assets/img/agenttell_leak_heatmap_clean.png){:.img-fluid .rounded .shadow-sm width="900"} <br>
+_Fig: Leakage score for each secret type across six backbones_
+
+<p style="margin-top:2em;"></p>
+
+Consider this scenario: you asked your Claude or GPT-based browser-use agent to check what role the organization you just joined gave you. However, you don't want to make it public information yet, so you asked the agent not to disclose this information to any other website. The agent opens the record list and finds you as minutes secretary. This information is now in the agent's context. Later in the same session, you asked the agent to register you for a community event run with several local organizations. The event website offers registration through several organizations, including your newly joined organization, alongside "Continue without an organization." Now, if you want to keep your affiliation a secret for now, you would choose the general option, which completes registration as an individual without giving the affiliation away. To comply with your privacy instruction, the agent should do the same. However, if the agent selects the union route, the website's access log records that choice, and the affiliation leaks.
+
+Our experimental data show that agents who read the user's affiliation selected the matching route in 90.3% of sessions, revealing private information the user asked to withhold. Moreover, even when agents explicitly note in their memory that such information (and more) is private and should not be revealed, they later reveal it to other websites through their actions in 56.7% of cases. More concerning, in 34.5% of these cases, the agents' final responses falsely assure users that the secret was not disclosed.
+
+**Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
+
+<div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="AgentTell links">
+  <a class="btn btn-outline-secondary readmore-btn"
+     data-target="#more-agenttell"
+     href="javascript:void(0)">Read more</a>
+  <a class="btn btn-outline-secondary" href="/assets/pdf/ICLR27___AgentTell.pdf" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-secondary" href="https://github.com/kagnlp/AgentTell" target="_blank" rel="noopener">Code</a>
+</div>
+
+<div id="more-agenttell" class="mt-2 d-none" markdown="1">
+Prior work has evaluated browser-use agent (BUA) security through adversarial studies, such as indirect prompt injection, environmental injection, and visual perturbations. In addition, privacy evaluations have studied whether agents disclose more than a task needs, but they study user-provided information on a single website. The example above is different from both. First, the observing website contains no adversarial instructions or perturbed inputs; disclosure occurs through the agent's ordinary task-directed choice. Second, the agent acquires the private information while completing a task on a prior website, and has privacy-preserving options on the second website, so the disclosure is not forced. To our knowledge, no prior work has investigated this threat model in browser-use agents.
+
+In this work, we investigate whether browser-use agents that acquire private information on one website later reveal it on another website through their task-directed actions, even when disclosure is explicitly prohibited by the user and is unnecessary to complete the task. We call this **behavioural side-channel leakage** because the observing website learns from the agent's choice of action, without directly requesting the private information or accessing the agent's context. To empirically measure this, we introduce AgentTell, a benchmark of 20 scenarios and 100 tasks. Each scenario deals with one type of private information (secret) drawn from prior work. In each task, the agent learns a secret while completing an activity on a plant website, and then visits a probe website that offers both secret-revealing actions and a general alternative that completes the task without disclosure. We evaluate six backbones across 9,760 sessions.
+
+**Findings.** Our investigation highlights five notable findings.
+- Agents carrying private information in their context leak it through their actions in **61.1%** of sessions, despite an explicit instruction not to disclose it. <br>
+- Agents explicitly noted in their memory that they must not share the information in 18.1% of sessions, but still revealed it in **56.7%** of those sessions. <br>
+- In **34.5%** of leaking sessions, agents' final responses falsely assured the user that no personal or account information was disclosed. <br>
+- Leakage varies substantially across secret types: personal attributes, account settings and relationships to specific items leak most, followed by sensitive affiliations, interests and credit relationships, while the identities of services where users hold accounts leak least. <br>
+- A secret is more likely to leak if it was actively used in a prior task.
+
+**Contributions.** We make the following main contributions in this work.
+- We formally define and investigate behavioural side-channel leakage in browser-use agents, where actions on one website reveal private information acquired on another, without any adversarial injections or instructions. <br>
+- We introduce AgentTell, a benchmark of 20 scenarios and 100 tasks. In each task, the agent picks up a secret on one website, then completes a task on another website that offers both actions that reveal the secret and a general alternative that completes the task without disclosing it. <br>
+- We evaluate 6 backbones across 9,760 sessions and analyze agents' reasoning, memory and responses to understand how leakage occurs, how earlier tasks affect it, and which secrets leak more.
 </div>
 
 
@@ -197,10 +245,6 @@ By uniquely bridging these three pillars, we provide a complete picture of the c
 
 
 
-<p style="margin-top:3em;"></p>
-
-
-## Ongoing Works
 ---
 
 ### 5G Vulnerability Testing using Retrieval-Augmented Generation
