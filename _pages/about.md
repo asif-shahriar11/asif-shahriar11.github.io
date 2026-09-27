@@ -58,4 +58,4 @@ If you'd like to get in touch, please drop me an email.
 
 To portray the core themes of my research, here is a wordle generated from the introductions of my peer-reviewerd papers and arXiv preprints.
 
-![Key research themes](/assets/img/research_wordcloud_lmroman.png){:.img-fluid .rounded .shadow-sm width="800"} <br>
+![Key research themes](/assets/img/research_wordcloud_200.png){:.img-fluid .rounded .shadow-sm width="800"} <br>
