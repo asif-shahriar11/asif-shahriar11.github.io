@@ -32,7 +32,7 @@ nav_order: 4
 
 - **Research Intern (Remote) \[Dec 2025 - present\]** <br>
   PurSec Lab, Purdue University <br>
-  Advisor: Prof. Z. Berkay Celik
+  Advisor: **[Prof. Z. Berkay Celik](https://beerkay.github.io/)**
 
 <p style="margin-top:2em;"></p>
 

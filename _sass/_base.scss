@@ -68,16 +68,18 @@ table.table a {
 
 // Outline buttons (e.g. Read more/PDF/Code buttons on the research page)
 // follow the site accent color instead of Bootstrap's default gray.
+// !important is needed to beat MDB, which forces its purple (#a6c) with !important.
 .btn-outline-secondary {
-  color: var(--global-theme-color);
-  border-color: var(--global-theme-color);
+  color: var(--global-theme-color) !important;
+  border-color: var(--global-theme-color) !important;
 
   &:hover,
   &:focus,
-  &:active {
-    color: var(--global-hover-text-color);
-    background-color: var(--global-hover-color);
-    border-color: var(--global-hover-color);
+  &:active,
+  &:not([disabled]):not(.disabled):active {
+    color: var(--global-hover-text-color) !important;
+    background-color: var(--global-hover-color) !important;
+    border-color: var(--global-hover-color) !important;
   }
 }
 
@@ -855,6 +857,11 @@ footer.sticky-bottom {
         font-weight: 500;
         color: var(--global-theme-color);
         margin-bottom: 0.5rem;
+
+        // The venue is wrapped in <em>, which the global text-color rule would override.
+        em {
+          color: inherit;
+        }
       }
 
       .links {
