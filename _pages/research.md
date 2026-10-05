@@ -2,7 +2,6 @@
 layout: page
 title: Research
 permalink: /research/
-description: A list of some of my research works.
 nav: true
 nav_order: 2
 ---
@@ -203,7 +202,7 @@ Our experiments demonstrate that Inceptive Transformers consistently outperform 
 ---
 
 ### A Survey on Agentic Security: Applications, Threats and Defenses
-*arXiv preprint, 2025.*
+***Transactions on Machine Learning Research (TMLR), 2026***
 
 
 <!-- If you prefer per-image width control, 
