@@ -11,21 +11,21 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Peer-reviewed publications in reversed chronological order.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-research",
           title: "Research",
-          description: "A list of some of my research works.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-career",
           title: "Career",
-          description: "A brief overview of my academic journey and professional experience.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/career/";
@@ -51,6 +51,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-my-first-authored-paper-on-cognitive-heuristics-in-llm-based-code-vulnerability-detection-has-been-accepted-in-ieee-s-amp-amp-p-2027",
           title: 'My first-authored paper on Cognitive Heuristics in LLM-based Code Vulnerability Detection has been...',
+          description: "",
+          section: "News",},{id: "news-our-survey-paper-on-agentic-security-has-been-accepted-for-publication-in-tmlr",
+          title: 'Our survey paper on Agentic Security has been accepted for publication in TMLR!...',
           description: "",
           section: "News",},{
         id: 'social-email',
