@@ -2,7 +2,6 @@
 layout: page
 permalink: /career/
 title: Career
-description: A brief overview of my academic journey and professional experience.
 nav: true
 nav_order: 4
 ---
@@ -10,21 +9,21 @@ nav_order: 4
 ### Education
 
 - **Bachelor of Science (BSc. Engg.) \[2019 - 2024\]** <br>
-  Department of Computer Science and Engineering (CSE) <br>
-  Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh <br>
+  [Department of Computer Science and Engineering (CSE)](https://cse.buet.ac.bd/) <br>
+  Bangladesh University of Engineering and Technology ([BUET](https://www.buet.ac.bd/web/#/)), Dhaka, Bangladesh <br>
   Dean's List for academic excellence
 
 <p style="margin-top:0.8em;"></p>
 
 - **Higher Secondary School Certificate (HSC) \[2016 - 2018\]** <br>
   Notre Dame College, Dhaka, Bangladesh <br>
-  Merit position: **10**th in Dhaka board (obtained board scholarship)
+  Merit position: **10**th in Dhaka board
 
 <p style="margin-top:0.8em;"></p>
 
 - **Secondary School Certificate (SSC) \[2016\]** <br>
   Ideal School and College, Dhaka, Bangladesh <br>
-  Merit position: **26**th in Dhaka board (obtained board scholarship)
+  Merit position: **26**th in Dhaka board
 
 <p style="margin-top:2em;"></p>
 
@@ -41,7 +40,7 @@ nav_order: 4
 - **Lecturer \[2024 - present\]** <br>
   Department of Computer Science and Engineering (CSE) <br>
   School of Data and Sciences <br>
-  BRAC University <br>
+  [BRAC University](https://www.bracu.ac.bd/) <br>
   Courses taught:
   - Data Communications
   - Artificial Intelligence
