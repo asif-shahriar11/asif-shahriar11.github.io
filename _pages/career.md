@@ -8,14 +8,14 @@ nav_order: 4
 
 ### Education
 
-- **Bachelor of Science (BSc. Engg.) \[2019 - 2024\]** <br>
+- **Bachelor of Science (BSc. Engg.) \[2019 — 2024\]** <br>
   [Department of Computer Science and Engineering (CSE)](https://cse.buet.ac.bd/) <br>
-  Bangladesh University of Engineering and Technology ([BUET](https://www.buet.ac.bd/web/#/)), Dhaka, Bangladesh <br>
+  [Bangladesh University of Engineering and Technology (BUET)](https://www.buet.ac.bd/web/#/), Dhaka, Bangladesh <br>
   Dean's List for academic excellence
 
 <p style="margin-top:0.8em;"></p>
 
-- **Higher Secondary School Certificate (HSC) \[2016 - 2018\]** <br>
+- **Higher Secondary School Certificate (HSC) \[2016 — 2018\]** <br>
   Notre Dame College, Dhaka, Bangladesh <br>
   Merit position: **10**th in Dhaka board
 
@@ -29,15 +29,24 @@ nav_order: 4
 
 ### Research Experience
 
-- **Research Intern (Remote) \[Dec 2025 - present\]** <br>
+- **Research Intern (Remote) \[Dec 2025 — present\]** <br>
   PurSec Lab, Purdue University <br>
   Advisor: **[Prof. Z. Berkay Celik](https://beerkay.github.io/)**
 
 <p style="margin-top:2em;"></p>
 
+### Academic Service
+
+- Reviewer, [EMNLP 2026](https://2026.emnlp.org/)
+- Reviewer, [IEEE Transactions on Cybernetics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036)
+- Reviewer, [Cybersecurity (Springer)](https://cybersecurity.springeropen.com/)
+- External Reviewer, [AIDC Workshop 2026](https://aidcworkshop.github.io/)
+
+<p style="margin-top:2em;"></p>
+
 ### Work
 
-- **Lecturer \[2024 - present\]** <br>
+- **Lecturer \[2024 — present\]** <br>
   Department of Computer Science and Engineering (CSE) <br>
   School of Data and Sciences <br>
   [BRAC University](https://www.bracu.ac.bd/) <br>
