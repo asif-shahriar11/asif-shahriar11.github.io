@@ -15,7 +15,8 @@ nav_order: 2
 ---
 
 ### Words Speak Louder Than Code: Investigating Cognitive Heuristics in LLM-Based Code Vulnerability Detection
-***IEEE Symposium on Security and Privacy (2027)***
+***IEEE Symposium on Security and Privacy (2027)*** <br>
+**Supervisor(s):** [Dr. Z. Berkay Celik (Purdue)](https://beerkay.github.io/), [Dr. Gang Wang (UIUC)](https://gangw.cs.illinois.edu/index.html)
 
 <p style="margin-top:1em;"></p>
 
@@ -32,13 +33,11 @@ _Fig: Controlled framework for triggering cognitive heuristics in LLM-based vuln
 
 In this work we have discovered that when we ask an LLM whether a code is vulnerable or safe, its response is significantly influenced by who wrote the code, how the task is framed, and what a previous verdict was -- signals that have nothing to do with the actual security of the code. This is a form of cognitive bias, the same kind of mental shortcut that skews human judgment under uncertainty, now showing up in how models make security decisions. For instance, if the code is attributed to a well-known, high-prestige author, the model tends to call it safe; but when the exact same code is attributed to a less-reputed author, the model calls it vulnerable. This is known as the halo effect. Similarly, describing the consequence of missing a bug versus the benefit of catching one can flip a model's verdict on identical code, which we call the framing effect, and simply showing the model a prior result, such as a passed security check, can anchor its judgment regardless of what the code actually contains, which we call the anchoring effect. Our experiments show that framing effect has the most influence on a model's security verdicts, followed by anchoring and halo. To highlight the practical impact, we demonstrate a proof-of-concept black-box cognitive attack that can suppress up to 97% of previously detected vulnerabilities.
 
-**Supervisor(s):** [Dr. Z. Berkay Celik (Purdue)](https://beerkay.github.io/), [Dr. Gang Wang (UIUC)](https://gangw.cs.illinois.edu/index.html)
-
 <div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="cognitive heuristics links">
   <a class="btn btn-outline-secondary readmore-btn"
      data-target="#more-cognitive-heuristics"
      href="javascript:void(0)">Read more</a>
-  <a class="btn btn-outline-secondary" href="/assets/pdf/cognitive-heuristics-arxiv.pdf" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-secondary" href="/assets/pdf/cognitive_vuln_detection.pdf" target="_blank" rel="noopener">PDF</a>
   <a class="btn btn-outline-secondary" href="https://github.com/purseclab/cognitive-heuristics-vuln-detect" target="_blank" rel="noopener">Code</a>
 </div>
 
@@ -55,7 +54,8 @@ In this work, we present the first systematic investigation of cognitive heurist
 ---
 
 ### AgentTell: Behavioural Side-Channel Leakage in Browser-Use Agents
-***Under review, ICLR 2027.***
+***Under review, ICLR 2027.*** <br>
+**Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
 
 <p style="margin-top:1em;"></p>
 
@@ -72,8 +72,6 @@ _Fig: Leakage score for each secret type across six backbones_
 Consider this scenario: you asked your Claude or GPT-based browser-use agent to check what role the organization you just joined gave you. However, you don't want to make it public information yet, so you asked the agent not to disclose this information to any other website. The agent opens the record list and finds you as minutes secretary. This information is now in the agent's context. Later in the same session, you asked the agent to register you for a community event run with several local organizations. The event website offers registration through several organizations, including your newly joined organization, alongside "Continue without an organization." Now, if you want to keep your affiliation a secret for now, you would choose the general option, which completes registration as an individual without giving the affiliation away. To comply with your privacy instruction, the agent should do the same. However, if the agent selects the union route, the website's access log records that choice, and the affiliation leaks.
 
 Our experimental data show that agents who read the user's affiliation selected the matching route in 90.3% of sessions, revealing private information the user asked to withhold. Moreover, even when agents explicitly note in their memory that such information (and more) is private and should not be revealed, they later reveal it to other websites through their actions in 56.7% of cases. More concerning, in 34.5% of these cases, the agents' final responses falsely assure users that the secret was not disclosed.
-
-**Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
 
 <div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="AgentTell links">
   <a class="btn btn-outline-secondary readmore-btn"
@@ -106,7 +104,8 @@ In this work, we investigate whether browser-use agents that acquire private inf
 ---
 
 ### 5GPT: 5G Vulnerability Detection by Combining Zero-Shot Capabilities of GPT-4 With Domain-Aware Strategies Through Prompt Engineering
-***IEEE Transactions on Information Forensics and Security, 2025.***  
+***IEEE Transactions on Information Forensics and Security, 2025.*** <br>
+**Supervisor(s):** [Dr. Md Shohrab Hossain (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mshohrabhossain), [Dr. Ying-Dar Lin](https://speed.cs.nycu.edu.tw/~ydlin/), [Dr. Ren-Hung Hwang](https://rhhwang.csie.io/English/index.html)
 
 <p style="margin-top:1em;"></p>
 
@@ -121,8 +120,6 @@ _Fig: Domain-aware approach_
 <p style="margin-top:1em;"></p>
 
 Can LLMs like GPT-4 analyze complex cellular protocol specifications to identify security vulnerabilities? We discovered that out-of-the-box GPT-4 has impressive capabilities in flagging ogical inconsistencies and procedural flaws, but it also hallucinates, provides false positives, and struggles to detect deep protocol issues. To remedy this, we teach GPT-4 to think like a telecom-security expert-- what properties must hold, how they fail, and how hazards indicators are exploited by adversaries. The result? A scalable, powerful, efficient black-box framework that can uncover subtle, protocol-level attack vectors that would otherwise slip through the cracks.
-
-**Supervisor(s):** [Dr. Md Shohrab Hossain (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mshohrabhossain), [Dr. Ying-Dar Lin](https://speed.cs.nycu.edu.tw/~ydlin/), [Dr. Ren-Hung Hwang](https://rhhwang.csie.io/English/index.html)
 
 
 
@@ -150,7 +147,8 @@ We also compared our findings against a white-box model, Mobile-LLaMA, and found
 ---
 
 ### Inceptive Transformers: Enhancing Contextual Representations through Multi-Scale Feature Learning Across Domains and Languages
-***EMNLP 2025 main conference**.*
+***EMNLP 2025 main conference**.* <br>
+**Supervisor(s):** [Dr. M Saifur Rahman (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mrahman), [Dr. Rifat Shahriyar (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/rifat)
 
 <p style="margin-top:1em;"></p>
 
@@ -174,8 +172,6 @@ _Fig: End-to-end workflow of Inceptive Transformer models_
 <p style="margin-top:2em;"></p>
 
 A modular, lightweight, plug-and-play architecture for enhancing the contextual representations of _**any**_ encoder model. Improves **EIGHT** PLM baselines across **FIVE** tasks for both short/long texts in English and Bangla.
-
-**Supervisor(s):** [Dr. M Saifur Rahman (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mrahman), [Dr. Rifat Shahriyar (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/rifat)
 
 <div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="Inceptive links">
   <a class="btn btn-outline-secondary readmore-btn"
@@ -202,7 +198,8 @@ Our experiments demonstrate that Inceptive Transformers consistently outperform 
 ---
 
 ### A Survey on Agentic Security: Applications, Threats and Defenses
-***Transactions on Machine Learning Research (TMLR), 2026***
+***Transactions on Machine Learning Research (TMLR), 2026*** <br>
+**Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
 
 
 <!-- If you prefer per-image width control, 
@@ -212,8 +209,6 @@ Our experiments demonstrate that Inceptive Transformers consistently outperform 
 <p style="margin-top:2em;"></p>
 
 In this work we present the first holistic survey of the **agentic security** landscape, structuring the field around three interdependent pillars: **Applications, Threats, and Defenses.** We provide a comprehensive taxonomy of over 250 papers, explaining how agents are used, the vulnerabilities they possess, and the countermeasures designed to protect them. Beyond cataloguing these pillars, we analyze each one and then present a cross-cutting analysis. For **applications**, we map every system onto the offensive and defensive lifecycles, study their differences, identify research clusters and examine the dual-use nature of red-teaming agents. For **threats**, we analyze the channels through which attacks enter and the agent-loop stages where they manifest, the specificity of each threat to the agentic setting, the threat models attackers assume, and the benchmarks used to measure them. For **defenses**, we analyze the defense strategies along scalability, robustness, overhead, and coverage, and examine where in the agent lifecycle protection is placed. Finally, we read across the full corpus along several axes, including the coverage of each attack class by existing defenses, agent architecture and cardinality, backbone model usage, data modality coverage, and the temporal distribution of attack and defense research.
-
-**Supervisor(s):** [Dr. Rizwan Parvez (QCRI)](https://elmi.hbku.edu.qa/en/persons/md-rizwan-parvez)
 
 <div class="d-flex flex-wrap gap-2 my-2" role="group" aria-label="Agentic security links">
   <a class="btn btn-outline-secondary readmore-btn"
@@ -247,7 +242,8 @@ By uniquely bridging these three pillars, we provide a complete picture of the c
 ---
 
 ### 5G Vulnerability Testing using Retrieval-Augmented Generation
-*Ongoing work.*  
+*Ongoing work.* <br>
+**Supervisor(s):** [Dr. Md Shohrab Hossain (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mshohrabhossain), [Dr. Syed Rafiul Hussain (Penn State)](https://syed-rafiul-hussain.github.io/)
 
 ![5G-RAG](/assets/img/5GRAG-flow-chart.png){:.img-fluid .rounded .shadow-sm width="800"} <br>
 _Fig: End-to-end workflow_
@@ -260,8 +256,6 @@ _Fig: Context retrieval method_
 <p style="margin-top:3em;"></p>
 
 In 5GPT, we showed that LLMs are capable of identifying vulnerailities from complex natural language documents like 5G specifications. However, we also showed that LLMs have a tendency to 'hallucinate', where they suggest some false-positives. Furthermore, it is difficult for LLMs to capture cross-section vulnerabilities. To address these issues, we propose a novel, fully automated end-to-end framework that utilizes a Retrieval-Augmented Generation (RAG) pipeline to ground LLM outputs in verified, domain-specific data to minimize hallucinations. We also introduce a robust context retrieval mechanism to overcome the cross-section dependency challenges. Using this framework, we have so far generated **800** test-cases for essential 5G mobility management procedures in **under 3 hours**.
-
-**Supervisor(s):** [Dr. Md Shohrab Hossain (BUET)](https://cse.buet.ac.bd/faculty/faculty_detail/mshohrabhossain), [Dr. Syed Rafiul Hussain (Penn State)](https://syed-rafiul-hussain.github.io/)
 
 
 ---

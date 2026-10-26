@@ -6,19 +6,18 @@
 
 
 
-@inproceedings{shahriar2026wordsspeaklouder,
+@inproceedings{shahriar2027words,
   selected={true},
   bibtex_show={true},
   abbr={IEEE S&P 2027},
   title={Words Speak Louder Than Code: Investigating Cognitive Heuristics in LLM-Based Code Vulnerability Detection},
-  author={Asif Shahriar and Hongyu Cai and Hadjer Benkraouda and Gang Wang and Z. Berkay Celik},
-  booktitle={48th IEEE Symposium on Security and Privacy (Oakland)},
-  year={2026},
-  display_year={2027},
+  author={Shahriar, Asif and Cai, Hongyu and Benkraouda, Hadjer and Wang, Gang and Celik, Z. Berkay},
+  booktitle={Proceedings of the 48th IEEE Symposium on Security and Privacy (S\&P)},
+  year={2027},
   abstract={Researchers and practitioners increasingly apply Large Language Models (LLMs) for automated vulnerability detection. Recent work has shown that LLMs are susceptible to the same cognitive heuristics that bias human judgment. Yet, no work has investigated whether these heuristics affect a model's assessment of code vulnerabilities. In this paper, we present the first systematic exploration of cognitive heuristics in LLM-driven code vulnerability detection. We introduce a controlled framework that holds the code fixed and only varies the surrounding context to trigger three cognitive heuristics: the halo effect through author attribution, the framing effect through task objectives and consequences, and the anchoring effect through prior analysis results. Within this framework, we evaluate eight LLMs across three programming languages and perform both quantitative and code-level analyses. Our findings demonstrate that all evaluated models are susceptible to these heuristics. Cross-model average susceptibility is highest for framing at 33.2%, followed by anchoring at 23.5% and halo at 18.4%. Code-level analysis reveals that vulnerabilities that require semantic reasoning for detection are more susceptible to cognitive heuristics than those identifiable through pattern matching. Furthermore, models often change their verdict from safe to vulnerable based on the cognitive condition, without accurately identifying the actual vulnerability. To highlight the practical impact, we demonstrate a proof-of-concept black-box cognitive attack that can suppress up to 97% of previously detected vulnerabilities. These findings indicate that cognitive susceptibility is a consistent and exploitable property of LLM-based vulnerability detection.},
-  pdf={cognitive-heuristics-arxiv.pdf},
-  preview={fig_susceptibility_tier_vertical.png},
-  doi={https://doi.org/10.48550/arXiv.2606.30587}
+  pdf={cognitive_vuln_detection.pdf},
+  code={https://github.com/purseclab/cognitive-heuristics-vuln-detect},
+  preview={fig_susceptibility_tier_vertical.png}
 }
 
 @inproceedings{shahriar2026agenttell,
@@ -29,7 +28,6 @@
   booktitle={ArXiv},
   year={2026},
   abstract={Browser-use agents often carry information in their context as they move between websites. While it may be necessary for task completion, it also creates a privacy risk, especially when the information contains a private fact regarding the user. For example, an agent may learn a user's affiliation after reading a membership record. If it later selects a registration option specific to that affiliation on another website instead of a general option, the information gets leaked. In this work, we define and study behavioural side-channel leakage in browser-use agents, where an agent's actions inadvertently reveal private information (secret) retained from a prior website, despite an explicit instruction not to disclose it. We introduce AgentTell, a benchmark of 20 scenarios and 100 tasks in which an agent acquires a secret on one website and then completes a task on another website that offers secret-specific actions alongside a general action that reveals nothing. Our evaluation across 9,760 sessions on six backbones shows that agents carrying a secret reveal it through their actions in 61.1% of sessions. Even when agents explicitly state in memory that the secret must not be shared, they still reveal it in 56.7% of those sessions. Moreover, in 34.5% of leaking sessions, their final responses falsely assure users that the secret was not disclosed. These findings show that agents often fail to recognize side-channel leakage as a privacy risk.},
-  arxiv={2609.32915},
   pdf={https://arxiv.org/pdf/2609.32915},
   code={https://github.com/kagnlp/AgentTell},
   preview={agenttell_motivating_example.png}
@@ -71,6 +69,7 @@
   year={2025},
   abstract={Encoder transformer models compress information from all tokens in a sequence into a single [CLS] token to represent global context. This approach often dilutes fine-grained or hierarchical features, leading to information loss in downstream tasks where local features are important. To remedy this, we propose a lightweight architectural enhancement in the form of an inception-style 1-D convolution module that sits on top of the transformer layer and augments token representations with multi-scale local features. This enriched feature space is then processed by a multi-headed self-attention layer that dynamically weights tokens based on their task relevance. Experiments across five diverse tasks, covering both short and long form texts, show that our framework consistently improves both general-purpose (RoBERTa, DeBERTa v3, ModernBERT), domain-specific (BioBERT, BERTweet, CT-BERT), and multilingual models (XLM-R, BanglaBERT); outperforming the baselines by 1% to 14% while maintaining efficiency. Ablation studies confirm that multi-scale convolution performs better than any single-kernel, and removing the self-attention layer hurts performance.},
   pdf={2025.emnlp-main.1312.pdf},
+  code={https://github.com/asif-shahriar11/inceptive-transformer},
   preview={inceptive_intro.png},
   doi={https://doi.org/10.18653/v1/2025.emnlp-main.1312},
   slides={EMNLP 2025_main-2943_slides.pdf}
@@ -87,8 +86,8 @@
   year={2025},
   abstract={The rapid shift from passive LLMs to autonomous LLM-agents marks a new paradigm in cybersecurity. While these agents can act as powerful tools for both offensive and defensive operations, the very agentic context introduces a new class of inherent security risks. In this work we present the first holistic survey of the agentic security landscape, structuring the field around three interdependent pillars: Applications, Threats, and Defenses. We provide a comprehensive taxonomy of over 150 papers, explaining how agents are used, the vulnerabilities they possess, and the countermeasures designed to protect them. A detailed cross-cutting analysis shows emerging trends in agent architecture while revealing critical research gaps in model and modality coverage. },
   pdf={2510.06445v3.pdf},
-  preview={fig1_threat_entrypoint_heatmap.png},
-  doi={https://doi.org/10.48550/arXiv.2510.06445}
+  code={https://github.com/kagnlp/Awesome-Agentic-Security},
+  preview={fig1_threat_entrypoint_heatmap.png}
 }
 
 
